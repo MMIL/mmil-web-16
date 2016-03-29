@@ -14,8 +14,6 @@
 <link href='https://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
 <!--Import Google Icon Font-->
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link href='https://fonts.googleapis.com/css?family=Allura' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
 <link rel="shortcut icon" type="image/x-icon" href="icon.ico">
 <!--this link is for the social icons-->
@@ -23,7 +21,9 @@
 <style type="text/css">
 
  
- 
+body{
+  font-family: 'Kaushan Script', cursive !important;
+}
  
 .imgC1 { position:absolute; top: 1%; left: 60%; z-index: 3;width:7%;margin-top:15%; }
 .imgD1 { position:absolute; top: 1%; left: 40%; z-index: 3;width:7%;margin-top:15%; }
@@ -94,6 +94,13 @@
   border-bottom-right-radius: 7.5rem 2.5rem;
   border-bottom-left-radius: 7.5rem 2.5rem;
 }
+#proj.parallax-container {
+    height: auto !important;
+}
+.card-reveal
+{
+  font-size: 20px;
+}
 
 </style>
 
@@ -115,12 +122,12 @@
 
 <!--Navigation-->
 <div class="navbar-fixed">
-<nav class="indigo" >
-    <div class="container">
+<nav class="light-blue darken-2" >
+    <div class="container" >
         <div class="nav-wrapper">
         <a href="#" class="brand-logo"><img src="images/logo1.png"></a>
         
-            <ul class="right hide-on-med-and-down">
+            <ul class="right hide-on-med-and-down" >
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Team</a></li>
                 <li><a href="#">Zealicon'16</a></li>
@@ -144,7 +151,7 @@
 </nav>
 </div>
 
-
+<!--ANIMATION AND MAIN DIV-->
 
 
 <div   style="background: #FEE1A5;">
@@ -169,19 +176,131 @@
 
 
 
- 
-        <div class=" container laptop" style="margin-top: 1cm;">
-          <div class="upper"></div>
-          <div class="lower"></div>
-        </div>       
+<!-- current event on the laptop-->
+<div class=" container laptop" style="margin-top: 1cm;">
+  <div class="upper"></div>
+  <div class="lower"></div>
+</div>       
   
 
 
 
+<!-- events-->
+
+<div class="parallax-container" id="proj">
+<div class="parallax"><img src="images/a7.jpg"></div>
+
+<div class="container">
+    <h2 class="header center black-text"><b>EVENTS</b></h2>
+    <div class="row">
+        <div class="col s12 m4 l4">
+            <div class="card hoverable">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="images/hack.jpg">
+                </div>
+                <div class="card-content center">
+                    <span class="card-title activator grey-text text-darken-4 ">JSS Hackathon 2015</span>
+                </div>
+                <div class="card-reveal center" id="rev">
+                    <span class="card-title grey-text text-darken-4">JSS Hackathon 2015<i class="mdi-navigation-close right"></i></span><br>
+                    <p>Conducted JSS Hackathon 2k15 conducted at JSSATE Noida funded by Microsoft</p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col s12 m4 l4">
+            <div class="card hoverable">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="images/casso.jpg">
+                </div>
+                <div class="card-content center">
+                    <span class="card-title activator grey-text text-darken-4">Casopian Wars 2015</span>
+                </div>
+                <div class="card-reveal center"  id="rev">
+                    <span class="card-title grey-text text-darken-4">Casopian Wars, Zealicon 2015<i class="mdi-navigation-close right"></i></span><br>
+                    <p> Conducted Casopian Wars - An evevt in which student present there Apps for various platformsconducted at Zealicon 2015</p></div>
+            </div>
+        </div>
+
+        <div class="col s12 m4 l4">
+            <div class="card hoverable">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="images/comp.jpg">
+                </div>
+                <div class="card-content center">
+                    <span class="card-title activator grey-text text-darken-4">Compequizicon 2015</span>
+                </div>
+                <div class="card-reveal center"  id="rev">
+                    <span class="card-title grey-text text-darken-4">Compequizicon, Zealicon 2015 <i class="mdi-navigation-close right"></i></span><br>
+                    <p >Organised Compequizicon - A technical IT-quiz event with hurdels and level conducted at Zealicon 2015</p> </div>
+            </div>
+        </div>
+
+        <div class="col s12 m4 l4">
+            <div class="card hoverable">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="images/and.jpg">
+                </div>
+                <div class="card-content center">
+                    <span class="card-title activator grey-text text-darken-4 ">Android App Dev</span>
+                </div>
+                <div class="card-reveal center"  id="rev">
+                    <span class="card-title grey-text text-darken-4"> Android App Dev <i class="mdi-navigation-close right"></i> </span><br>
+                    <p>A Workshop on Android App Development </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col s12 m4 l4">
+            <div class="card hoverable">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="images/wind.jpg">
+                </div>
+                <div class="card-content center">
+                    <span class="card-title activator grey-text text-darken-4">Windows App Dev</span>
+                </div>
+                <div class="card-reveal center"  id="rev">
+                    <span class="card-title grey-text text-darken-4">Windows App Dev <i class="mdi-navigation-close right"></i></span><br>
+                    <p>A Workshop on Windows App Development</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col s12 m4 l4">
+            <div class="card hoverable">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="images/iot.jpg">
+                </div>
+                <div class="card-content center">
+                    <span class="card-title activator grey-text text-darken-4">IOT Hands On </span>
+                </div>
+                <div class="card-reveal center"  id="rev">
+                    <span class="card-title grey-text text-darken-4">IOT Hands On <i class="mdi-navigation-close right"></i></span><br>
+                    <p>A Workshop on Internet of things in which Students where taught to contact various sensors with raspberry pi and ardiuno</p>
+                </div>
+            </div>
+        </div>
+          
+     </div>
+</div>
+</div>        
 
 
- <div class="parallax-container">
-      <div class="parallax"><img src="parallax.png">
+
+
+
+
+
+
+
+<!-- our contributions-->
+
+
+
+<div class="container">
+<h2 class="header center black-text"><b>OUR &nbsp;&nbsp; CONTRIBUTIONS</b></h2>
+</div>
 
 
 
@@ -191,6 +310,34 @@
 
 
 
+ <!-- Floating Share Button -->
+
+<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+<a class="btn-floating btn-large light-blue darken-2">
+  <i class="fa fa-rocket"> </i>
+</a>
+<ul>
+   <li><a class="btn-floating deep-purple darken-4" href="https://www.facebook.com/groups/JSSNokia/"><i class="fa fa-facebook "></i></a></li>
+   <li><a class="btn-floating blue" href="https://twitter.com/ "><i class="fa fa-twitter "></i></a></li>
+   <li><a class="btn-floating red" href="https://plus.google.com/"><i class="fa fa-google "></i></a></li>
+   <li><a class="btn-floating purple" href="https://github.com/MMIL"><i class="fa fa-github"></i></a></li>
+  
+</ul>
+</div>
+
+
+
+ 
+
+<!--our team-->
+<div class="parallax-container"  >
+<div class="parallax"><img src="images/parallax.png"></div>
+
+<div class="container">
+    <h2 class="header center black-text" ><b>OUR &nbsp;&nbsp; TEAM</b></h2>
+</div>
+</div>
+    
 
 
 
@@ -198,23 +345,7 @@
 
 
 
-
-
-
-
-
-
-
-      </div>
-    </div>
-
-
-
-
-
-
-
-<footer id="contact" class="page-footer indigo scrollspy">
+<footer id="contact" class="page-footer light-blue darken-2 scrollspy" style="font-size:15px">
 <div class="container">  
     <div class="row">
         <div class="col s12">
@@ -246,9 +377,9 @@
         </div>
          
 </div>
-<div class="footer-copyright indigo foot">
+<div class="footer-copyright light-blue darken-2 foot" style="font-size:15px">
     <div class="container center">
-        Made by <a class="indigo-text text-darken-4" href="http://itsanant.tz" style="margin-left:0.5em">Microsoft Mobile Innovation Lab.</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thanks to <a class="indigo-text text-darken-4" href="http://materializecss.com/" style="margin-left:0.5em">materialize_css .</a>
+        Made by <a class="indigo-text text-darken-4" href="#" style="margin-left:0.5em">Microsoft Mobile Innovation Lab.</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thanks to <a class="indigo-text text-darken-4" href="http://materializecss.com/" style="margin-left:0.5em">materialize_css .</a>
     </div>
 </div>
 </footer>
