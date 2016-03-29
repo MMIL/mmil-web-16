@@ -176,40 +176,107 @@
 </div>
 
 
+<?php
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') 
+{ // Handle the form.
+
+    
+     // Validate the form data:
+     $problem = FALSE;
+     if (!empty($_POST['name']) && !empty($_POST['mobile_number'])) 
+     {
+          $name = trim(strip_tags($_POST['name']));
+          $mobile_number = trim(strip_tags($_POST['mobile_number']));
+          $year = $_POST['year'];
+          $branch = $_POST['branch'];
+          foreach ($_POST['events'] as $selectedOption)
+            $events[$selectedOption]=$selectedOption;   
+           
+     } 
+     else 
+     {
+          print '<p style="color: red;">Please enter all required fields.</p>';
+          $problem = TRUE;
+     }
+
+     if (!$problem)
+     {
+      $data=$name.'     '.$mobile_number.'     '.$year.'    '.$branch;
+      foreach ($events as $selectedOption)
+        file_put_contents($selectedOption.' Registration List.txt',$data . PHP_EOL, FILE_APPEND);
+
+      echo "<script>alert('THANX FOR REGISTERING!!');</script>";
+     }
+}
+
+     
+?>
+     <div class="row container">
+          <form class="col s12" method="post" action="">
+               <div class="row">
+                                                                                <!--name-->
+                    <div class="input-field col s6">
+                         <input name="name" id="name" type="text" class="validate" pattern="[a-zA-Z][a-zA-Z ]{4,}" title="Please use letters only" required>
+                         <label for="name">Name</label>
+                    </div>
+                                                                                 <!--mobile number-->
+                    <div class="input-field col s6">
+                         <input name="mobile_number" id="mob" type="text" class="validate" pattern="[0-9]{10}" title="please enter your 10 digit mobile number" required>
+                         <label for="mob">Mobile No.</label>
+                    </div>
+               </div>
+               <div class="row">
+                                                                                 <!--Year-->
+                    <div class="input-field col s6">
+                         <select name="year">
+                              <option value="" disabled selected>Year</option>
+                              <option value="1">I</option>
+                              <option value="2">II</option>
+                              <option value="3">III</option>
+                              <option value="4">IV</option>
+                         </select>
+                    </div>
+                    <div class="input-field col s6">
+                                                                                 <!--branch-->
+                           <select name="branch">
+                              <option value="" disabled selected>Branch</option>
+                              <option value="CS">CS</option>
+                              <option value="IT">IT</option>
+                              <option value="ME">ME</option>
+                              <option value="EC">EC</option>
+                              <option value="EE">EE</option>
+                              <option value="EEE">EEE</option>
+                              <option value="IC">IC</option>
+                              <option value="CE">CE</option>
+                              <option value="MT">MT</option>
+                              <option value="MCA">MCA</option>
+                         </select>
+                    </div>
+               </div>
+               <div class="row">
+                   <div class="input-field col s6">
+                                                                                 <!--events-->
+                         <select multiple name="events[]">
+                              <option value="" disabled selected>Choose Your Events</option>
+                              <option value="Casseopeian Wars">Casseopeian Wars</option>
+                              <option value="Compequizicon">Compequizicon</option>
+                              <option value="Code-Ageddon">Code-Ageddon</option>
+                              <option value="Ring Ring">Ring Ring</option>
+                         </select>
+                    </div>
+                                                                                <!--submit-->
+                    <div class="input-field col s6">
+                         <center><button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                         <i class="material-icons right">send</i>
+                         </button></center>
+                    </div>
+               </div>
+          </form>
+     </div>
+
 
 <footer id="contact" class="page-footer light-blue darken-2 scrollspy">
-<div class="container">  
-    <div class="row">
-        <div class="col s12">
-            <form class="col s12" action="contact.php" method="post">
-                <div class="row">
-                    <div class="input-field col s6">
-                        <i class="material-icons prefix white-text">person_pin</i>
-                        <input id="icon_prefix" name="name" type="text" class="validate white-text">
-                        <label for="icon_prefix" class="white-text">First Name</label>
-                    </div>
-                    <div class="input-field col s6">
-                        <i class="material-icons prefix white-text">message</i>
-                        <textarea id="icon_prefix2" name="message" class="materialize-textarea white-text"></textarea>
-                        <label for="icon_prefix2" class="white-text">Message</label>
-                    </div>
-                     
-                    <div class="input-field col s6">
-                        <i class="material-icons prefix white-text">email</i>
-                        <input id="icon_email" name="email" type="email" class="validate white-text">
-                        <label for="icon_email" class="white-text">Email-id</label>
-                    </div>
-                    <div class="col s6 center sub">
-                        <button class="btn waves-effect waves-light indigo darken-4 z-depth-5" type="submit">Submit
-                            <i class="material-icons right white-text">send</i>
-                        </button>
-                    </div>
-                </div>
-            </form>
-        </div>
-         
-</div>
-<div class="footer-copyright light-blue darken-2 foot">
     <div class="container center">
         Made by <a class="indigo-text text-darken-4" href="http://itsanant.tz" style="margin-left:0.5em">Microsoft Mobile Innovation Lab.</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thanks to <a class="indigo-text text-darken-4" href="http://materializecss.com/" style="margin-left:0.5em">materialize_css .</a>
     </div>
@@ -223,16 +290,19 @@
 
 
 <!--Import jQuery before materialize.js-->
-       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
-
-
-
-
-
+<script type="text/javascript" src="../js/jquery.min.js" ></script>
+<script type="text/javascript" src="../js/materialize.min.js" ></script>
+     <script type="text/javascript">
+           $(document).ready(function() {
+         $('select').material_select();
+          $('.modal-trigger').leanModal();
+          
+       });
+     </script>
 
   
- 
+
+   
 
 
  
