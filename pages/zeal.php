@@ -267,7 +267,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
                     </div>
                                                                                 <!--submit-->
                     <div class="input-field col s6">
-                         <center><button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                         <center><button class="btn waves-effect waves-light light-blue darken-2" type="submit" name="action">Submit
                          <i class="material-icons right">send</i>
                          </button></center>
                     </div>
@@ -278,7 +278,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
 
 <footer id="contact" class="page-footer light-blue darken-2 scrollspy">
     <div class="container center" style="font-size:15px">
-        Made by <a class="indigo-text text-darken-4" href="index.html" style="margin-left:0.5em">Microsoft Mobile Innovation Lab.</a>
+        Made by <a class="indigo-text text-darken-4" href="../index.html" style="margin-left:0.5em">Microsoft Mobile Innovation Lab.</a>
     </div>
 </div>
 </footer>
