@@ -10,6 +10,10 @@
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" type="text/css" href="css/materialize.css">
 <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
+
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.css">
 <!--logo font-->
 <link href='https://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
 <!--Import Google Icon Font-->
@@ -99,13 +103,68 @@ body{
 #pr.parallax-container {
     height: auto !important;
 }
+#te.parallax-container {
+    height: auto !important;
+}
 .card-reveal
 {
   font-size: 20px;
 }
 .control-buttons li.active {
     background: white;
+
+
 }
+
+
+.ca.card {
+          position: relative;
+          margin: 0.5rem 0 1rem 0;
+        background-color: #fff;
+          transition: box-shadow .25s;
+          border-radius: 50% / 10%; 
+        width:90%;
+  }
+.ca.card .card-image img {
+    display: block;    
+      border-radius: 20px 20px 0 0;
+    position: relative;    
+    left: 0;      
+    right: 0;     
+    top: 0;     
+    bottom: 0;     
+          width: 100%;
+  } 
+.ca.card .card-content {
+          padding: 1px;
+        border-radius: 0 0 2px 2px
+  }   } 
+.ca.card .card-content ul {
+          margin-left: 0;
+          color: inherit
+  }
+.ca.card .card-action {
+          border-top: 1px solid rgba(160, 160, 160, 0.2);
+        padding: 20px;
+  }
+.ca.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating) {
+          color: black;
+          margin-right: 5%;
+        margin-left: 7%;
+          transition: color .3s ease;
+          text-transform: uppercase;
+        }
+/*after hover color of next and pevious button*/
+.owl-theme .owl-controls .owl-nav [class*=owl-]:hover {
+    background: white;
+    color:black;
+     
+}
+
+/*Initial color of next and pevious button*/
+.owl-theme .owl-controls .owl-nav [class*=owl-] {
+   background: #0288d1;
+ }
 
 </style>
 
@@ -505,11 +564,523 @@ body{
 
 <!--our team-->
 <div id="team">
-<div class="parallax-container"  >
+<div class="parallax-container" id="te"  >
 <div class="parallax"><img src="images/parallax.png"></div>
 
-<div class="container">
+<div  >
     <h2 class="header center black-text" ><b>OUR &nbsp;&nbsp; TEAM</b></h2>
+
+    <div class="owl-carousel " >
+            <div class="item "   >
+              <div class="card ca" >
+            <div class="card-image">
+              <img src="images/saurabh.jpg">
+              
+            </div>
+            <div class="card-content center">
+              <ul>
+                <li><h5>Saurabh Verma</h5></li>
+                <li><h6><b>[Founder]</b></h6></li>
+
+            </ul>
+            </div>
+            <div class="card-action">
+             <div class="social-media-banner">
+                <a href=""><i class="fa fa-twitter small"></i></a>
+                <a href=""><i class="fa fa-facebook small"></i></a>
+        <a href=""><i class="fa fa-instagram small"></i></a>
+                <a href=""><i class="fa fa-linkedin small"></i></a>
+            </div>
+            </div>
+          </div>
+
+           </div>
+            <div class="item">
+              <div class="card ca">
+            <div class="card-image">
+              <img src="images/Prince.jpg">
+              
+            </div>
+            <div class="card-content center">
+      <ul>
+              <li><h5>Prince Kumar</h5></li>
+                <li><h6><b>[Co-Founder]</b></h6></li>
+        </ul>
+            </div>
+            <div class="card-action">
+              <div class="social-media-banner">
+                <a href=""><i class="fa fa-twitter small"></i></a>
+                <a href=""><i class="fa fa-facebook small"></i></a>
+                <a href=""><i class="fa fa-instagram small"></i></a>
+                <a href=""><i class="fa fa-linkedin small"></i></a>
+            </div>
+            </div>
+          </div>
+            </div>
+            <div class="item">
+               <div class="card ca">
+            <div class="card-image">
+              <img src="images/itisri.png">
+              
+            </div>
+            <div class="card-content center">
+              <ul>
+                <li><h5>Itishri Singh</h5></li>
+                <li><h6><b>[President]</b></h6></li>
+
+            </ul>
+            </div>
+            <div class="card-action">
+              <div class="social-media-banner">
+                <a href=""><i class="fa fa-twitter small"></i></a>
+                <a href=""><i class="fa fa-facebook small"></i></a>
+                <a href="https://github.com/itishri123"><i class="fa fa-github small"></i></a>
+                <a href="https://touch.www.linkedin.com/?sessionid=4816177343758336&voyurl=https%3A%2F%2Fwww.linkedin.com%2Fm%2F%3Fsessionid%3D4816177
+        343758336&rs=false&redirectUrl=%23stream#you"><i class="fa fa-linkedin small"></i></a>
+            </div>
+            </div>
+          </div>
+            </div>
+            <div class="item">
+               <div class="card ca">
+            <div class="card-image">
+              <img src="images/tewari.jpg">
+              
+            </div>
+            <div class="card-content center">
+              <ul>
+                <li><h5>Akash Tewari</h5></li>
+                <li><h6><b>[CTC]</b></h6></li>
+
+            </ul>
+            </div>
+            <div class="card-action">
+             <div class="social-media-banner">
+                <a href=""><i class="fa fa-twitter small"></i></a>
+                <a href=""><i class="fa fa-facebook small"></i></a>
+                <a href=""><i class="fa fa-instagram small"></i></a>
+                <a href=""><i class="fa fa-linkedin small"></i></a>
+            </div>
+            </div>
+          </div>
+            </div>
+            <div class="item">
+               <div class="card ca">
+            <div class="card-image">
+              <img src="images/riddhi.jpg">
+              
+            </div>
+            <div class="card-content center">
+              <ul>
+                <li><h5>Riddhi Agarwal</h5></li>
+                <li><h6><b>[CTC]</b></h6></li>
+
+            </ul>
+            </div>
+            <div class="card-action">
+              <div class="social-media-banner">
+                <a href=""><i class="fa fa-twitter small"></i></a>
+                <a href=""><i class="fa fa-facebook small"></i></a>
+                <a href=""><i class="fa fa-instagram small"></i></a>
+                <a href=""><i class="fa fa-linkedin small"></i></a>
+            </div>
+            </div>
+          </div>
+            </div>
+            <div class="item">
+               <div class="card ca">
+            <div class="card-image">
+              <img src="images/mohit.jpg">
+              
+            </div>
+            <div class="card-content center">
+              <ul>
+                <li><h5>Mohit Chaudhary</h5></li>
+                <li><h6><b>[General Secretary]</b></h6></li>
+
+            </ul>
+            </div>
+            <div class="card-action">
+              <div class="social-media-banner">
+                <a href=""><i class="fa fa-twitter small"></i></a>
+                <a href=""><i class="fa fa-facebook small"></i></a>
+                <a href=""><i class="fa fa-instagram small"></i></a>
+                <a href=""><i class="fa fa-linkedin small"></i></a>
+            </div>
+            </div>
+          </div>
+            </div>
+            <div class="item">
+               <div class="card ca">
+            <div class="card-image">
+              <img src="images/anubhav.jpg">
+              
+            </div>
+            <div class="card-content center">
+              <ul>
+                <li><h5>Anubhav Singh</h5></li>
+                <li><h6><b>[Technical Head]</b></h6></li>
+
+            </ul>
+            </div>
+            <div class="card-action">
+              <div class="social-media-banner">
+                <a href="https://twitter.com/experienceflas1"><i class="fa fa-twitter small"></i></a>
+                <a href=""><i class="fa fa-facebook small"></i></a>
+                <a href="www.github.com/gitexperience"><i class="fa fa-github small"></i></a>
+                <a href="https://www.linkedin.com/profile/view?id=347472143"><i class="fa fa-linkedin small"></i></a>
+            </div>
+            </div>
+          </div>
+            </div>
+            <div class="item">
+               <div class="card ca">
+            <div class="card-image">
+              <img src="images/shivbaran.jpg">
+              
+            </div>
+            <div class="card-content center">
+              <ul>
+                <li><h5>Shiv Baran Singh</h5></li>
+                <li><h6><b>[Web Programming Head]</b></h6></li>
+
+            </ul>
+            </div>
+            <div class="card-action">
+              <div class="social-media-banner">
+                <a href="https://twitter.com/experienceflas1"><i class="fa fa-twitter small"></i></a>
+                <a href=""><i class="fa fa-facebook small"></i></a>
+                <a href="www.github.com/gitexperience"><i class="fa fa-github small"></i></a>
+                <a href="https://www.linkedin.com/profile/view?id=347472143"><i class="fa fa-linkedin small"></i></a>
+            </div>
+            </div>
+          </div>
+            </div>
+            <div class="item">
+               <div class="card ca">
+            <div class="card-image">
+              <img src="images/arman.png">
+              
+            </div>
+            <div class="card-content center">
+              <ul>
+                <li><h5>Arman Ahmed</h5></li>
+                <li><h6><b>[Linux Department]</b></h6></li>
+
+            </ul>
+            </div>
+            <div class="card-action">
+              <div class="social-media-banner">
+                <a href=""><i class="fa fa-twitter small"></i></a>
+                <a href=""><i class="fa fa-facebook small"></i></a>
+                <a href=""><i class="fa fa-instagram small"></i></a>
+                <a href=""><i class="fa fa-linkedin small"></i></a>
+            </div>
+            </div>
+          </div>
+            </div>
+            <div class="item">
+               <div class="card ca">
+            <div class="card-image">
+              <img src="images/aakash.jpg">
+              
+            </div>
+            <div class="card-content center">
+              <ul>
+                <li><h5>Akash Chandoke</h5></li>
+                <li><h6><b>[DB]</b></h6></li>
+
+            </ul>
+            </div>
+            <div class="card-action">
+              <div class="social-media-banner">
+                <a href=""><i class="fa fa-twitter small"></i></a>
+                <a href=""><i class="fa fa-facebook small"></i></a>
+                <a href=""><i class="fa fa-instagram small"></i></a>
+                <a href=""><i class="fa fa-linkedin small"></i></a>
+            </div>
+            </div>
+          </div>
+            </div>
+            <div class="item">
+               <div class="card ca">
+            <div class="card-image">
+              <img src="images/Vini.jpg">
+              
+            </div>
+            <div class="card-content center">
+              <ul>
+                <li><h5>Vini Maheshwari</h5></li>
+                <li><h6><b>[Developer]</b></h6></li>
+
+            </ul>
+            </div>
+            <div class="card-action">
+              <div class="social-media-banner">
+                <a href="https://twitter.com/MaheshwariVini"><i class="fa fa-twitter small"></i></a>
+                <a href="https://github.com/vinimaheshwari02"><i class="fa fa-github small"></i></a>
+                <a href=""><i class="fa fa-instagram small"></i></a>
+                <a href="https://www.linkedin.com/profile/view?id=AAIAABuKo-YBq6YbiMYv1P0_CUjLm_Z8Q7WlbvM&trk=nav_responsive_tab_profilehttps://twitter.com/MaheshwariVini"><i class="fa fa-linkedin small"></i></a>
+            </div>
+            </div>
+          </div>
+            </div>
+            <div class="item">
+               <div class="card ca">
+            <div class="card-image">
+              <img src="images/anant.jpg">
+              
+            </div>
+            <div class="card-content center">
+              <ul>
+                <li><h5>Anant Kumar Singh</h5></li>
+                <li><h6><b>[Developer]</b></h6></li>
+
+            </ul>
+            </div>
+            <div class="card-action">
+              <div class="social-media-banner">
+                <a href="https://twitter.com/anantsingh1010"><i class="fa fa-twitter small"></i></a>
+                <a href="https://github.com/anant-dev"><i class="fa fa-facebook small"></i></a>
+                <a href=""><i class="fa fa-github small"></i></a>
+                <a href="https://in.linkedin.com/in/anant-singh-b25892b0"><i class="fa fa-linkedin small"></i></a>
+            </div>
+            </div>
+          </div>
+            </div>
+      <div class="item">
+               <div class="card ca">
+            <div class="card-image">
+              <img src="images/nikhilbhagat.jpg">
+              
+            </div>
+            <div class="card-content center">
+              <ul>
+                <li><h5>Nikhil Bhagat</h5></li>
+                <li><h6><b>[Developer]</b></h6></li>
+
+            </ul>
+            </div>
+            <div class="card-action">
+             <div class="social-media-banner">
+                <a href=""><i class="fa fa-twitter small"></i></a>
+                <a href=""><i class="fa fa-facebook small"></i></a>
+                <a href=""><i class="fa fa-instagram small"></i></a>
+                <a href=""><i class="fa fa-linkedin small"></i></a>
+            </div> 
+            </div>
+          </div>
+            </div>
+      <div class="item">
+               <div class="card ca">
+            <div class="card-image">
+              <img src="images/Vibhuti.jpg">
+              
+            </div>
+            <div class="card-content center">
+               <ul>
+                <li><h5>Vibhuti Shukla</h5></li>
+                <li><h6><b>[Developer]</b></h6></li>
+
+            </ul>
+            </div>
+            <div class="card-action">
+              <div class="social-media-banner">
+                <a href=""><i class="fa fa-twitter small"></i></a>
+                <a href=""><i class="fa fa-facebook small"></i></a>
+                <a href=""><i class="fa fa-instagram small"></i></a>
+                <a href=""><i class="fa fa-linkedin small"></i></a>
+            </div>
+            </div>
+          </div>
+            </div>
+      <div class="item">
+               <div class="card ca">
+            <div class="card-image">
+              <img src="images/sakshi.jpg">
+              
+            </div>
+            <div class="card-content center">
+              <ul>
+                <li><h5>Sakshi Tripathi</h5></li>
+                <li><h6><b>[Developer]</b></h6></li>
+
+            </ul>
+            </div>
+            <div class="card-action">
+              <div class="social-media-banner">
+                <a href=""><i class="fa fa-twitter small"></i></a>
+                <a href=""><i class="fa fa-facebook small"></i></a>
+                <a href="https://github.com/sakshi29"><i class="fa fa-github small"></i></a>
+                <a href="https://in.linkedin.com/in/sakshi-tripathi-953234102"><i class="fa fa-linkedin small"></i></a>
+            </div>
+            </div>
+          </div>
+            </div>
+      <div class="item">
+               <div class="card ca">
+            <div class="card-image">
+              <img src="images/sumit.jpg">
+              
+            </div>
+            <div class="card-content center">
+              <ul>
+                <li><h5>Sumit Pandir</h5></li>
+                <li><h6><b>[Developer]</b></h6></li>
+
+            </ul>
+            </div>
+            <div class="card-action">
+              <div class="social-media-banner">
+                <a href=""><i class="fa fa-twitter small"></i></a>
+                <a href=""><i class="fa fa-facebook small"></i></a>
+                <a href=""><i class="fa fa-instagram small"></i></a>
+                <a href=""><i class="fa fa-linkedin small"></i></a>
+            </div>
+            </div>
+          </div>
+            </div>
+      <div class="item">
+               <div class="card ca">
+            <div class="card-image">
+              <img src="images/Kanishk.jpg">
+              
+            </div>
+            <div class="card-content center">
+              <ul>
+                <li><h5>Kanishk Sharma</h5></li>
+                <li><h6><b>[Developer]</b></h6></li>
+
+            </ul>
+            </div>
+            <div class="card-action">
+              <div class="social-media-banner">
+                <a href="https://twitter.com/Kani3012?lang=en-in"><i class="fa fa-twitter small"></i></a>
+                <a href=""><i class="fa fa-facebook small"></i></a>
+                <a href="https://github.com/kani3012"><i class="fa fa-github small"></i></a>
+                <a href="https://in.linkedin.com/in/kanishk-sharma-79354410a"><i class="fa fa-linkedin small"></i></a>
+            </div>
+            </div>
+          </div>
+            </div>
+      <div class="item">
+               <div class="card ca">
+            <div class="card-image">
+              <img src="images/ayushi.jpg">
+              
+            </div>
+            <div class="card-content center">
+              <ul>
+                <li><h5>Ayushi Rathore</h5></li>
+                <li><h6><b>[Developer]</b></h6></li>
+
+            </ul>
+            
+            </div>
+            <div class="card-action">
+              <div class="social-media-banner">
+                <a href=""><i class="fa fa-twitter small"></i></a>
+                <a href=""><i class="fa fa-facebook small"></i></a>
+                <a href="https://github.com/AyushiRathore"><i class="fa fa-github small"></i></a>
+                <a href="https://in.linkedin.com/in/ayushi-rathore-23876856"><i class="fa fa-linkedin small"></i></a>
+            </div>
+            </div>
+          </div>
+            </div>
+      <div class="item">
+               <div class="card ca">
+            <div class="card-image">
+              <img src="images/Deepti.jpg">
+              
+            </div>
+            <div class="card-content center">
+              <ul>
+                <li><h5>Deepti Jain</h5></li>
+                <li><h6><b>[Developer]</b></h6>li>
+
+            </ul>
+            </div>
+            <div class="card-action">
+              <div class="social-media-banner">
+                <a href=""><i class="fa fa-twitter small"></i></a>
+                <a href=""><i class="fa fa-facebook small"></i></a>
+                <a href="https://github.com/deepti1996"><i class="fa fa-github small"></i></a>
+                <a href="https://in.linkedin.com/in/deeptijain9676"><i class="fa fa-linkedin small"></i></a>
+            </div>
+            </div>
+          </div>
+            </div>
+      <div class="item">
+               <div class="card ca">
+            <div class="card-image">
+              <img src="images/divyanshu.jpg">
+              
+            </div>
+            <div class="card-content center" >
+              <ul>
+                <li><h5>Divyanshu Verma</h5></li>
+                <li><h6><b>[Developer]</b></h6></li>
+
+            </ul>
+            </div>
+            <div class="card-action">
+              <div class="social-media-banner">
+                <a href=""><i class="fa fa-twitter small"></i></a>
+                <a href=""><i class="fa fa-facebook small"></i></a>
+                <a href=""><i class="fa fa-instagram small"></i></a>
+                <a href=""><i class="fa fa-linkedin small"></i></a>
+            </div>
+            </div>
+          </div>
+            </div>
+      <div class="item">
+               <div class="card ca">
+            <div class="card-image">
+              <img src="images/tarun.jpg">
+              
+            </div>
+            <div class="card-content center">
+              <ul>
+                <li><h5>Tarun Garg</h5></li>
+                <li><h6><b>[Developer]</b></h6></li>
+
+            </ul>
+            </div>
+            <div class="card-action">
+              <div class="social-media-banner">
+                <a href=""><i class="fa fa-twitter small"></i></a>
+                <a href=""><i class="fa fa-facebook small"></i></a>
+                <a href=""><i class="fa fa-instagram small"></i></a>
+                <a href=""><i class="fa fa-linkedin small"></i></a>
+            </div>
+            </div>
+          </div>
+            </div>
+      <div class="item">
+               <div class="card ca">
+            <div class="card-image">
+              <img src="images/akshay.jpg">
+              
+            </div>
+            <div class="card-content center">
+              <ul>
+                <li><h5>Akshay Vashishth</h5></li>
+                <li><h6><b>[Developer]</b></h6></li>
+
+            </ul>
+            </div>
+            <div class="card-action">
+               <div class="social-media-banner">
+                <a href="https://twitter.com/VashisthaAkshay"><i class="fa fa-twitter small"></i></a>
+                <a href=""><i class="fa fa-facebook small"></i></a>
+                <a href="https://github.com/ajatgd"><i class="fa fa-github small"></i></a>
+                <a href="https://www.linkedin.com/in/akshay-vashistha-9a558778"><i class="fa fa-linkedin small"></i></a>
+            </div>
+            </div>
+          </div>
+            </div>
+      
+          </div>
 </div>
 </div>
     
@@ -569,6 +1140,7 @@ body{
 <!--Import jQuery before materialize.js-->
        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+       <script src="js/owl.carousel.js"></script>
 
 
 
@@ -725,6 +1297,39 @@ $(document).ready(function(){
 
     });
        
+</script>
+<script>
+  $(document).ready(function() {
+  $('.owl-carousel').owlCarousel({
+    loop:true,
+  dots: true,
+  autoplay:true,
+  autoplayTimeout:3000,
+  
+    margin:10,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:2,
+            nav:false
+        },
+        1000:{
+            items:4,
+            nav:true,
+            loop:false
+        }
+    
+    }
+});
+
+});
+
+
+
 </script>
 
 
