@@ -9,6 +9,13 @@ html {
   box-sizing: border-box;
 }
 
+.text1{
+  font-weight: bold;
+}
+
+.text{
+  font-size: 20px;
+}
 body {
   font-size: 62.5%;
 }
