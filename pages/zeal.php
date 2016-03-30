@@ -85,7 +85,7 @@
 <div class="container">
     <h2 class="header center black-text"><b>ZEALICON'16</b></h2>
     <div class="row">
-        <div class="col s12 m3 l3">
+        <div class="col s6 m3 l3">
             <div class="card hoverable">
                 <div class="card-image waves-effect waves-block waves-light">
                     <img class="activator" src="../images/hack.jpg">
@@ -101,7 +101,7 @@
             </div>
         </div>
 
-        <div class="col s12 m3 l3">
+        <div class="col s6 m3 l3">
             <div class="card hoverable">
                 <div class="card-image waves-effect waves-block waves-light">
                     <img class="activator" src="../images/casso.jpg">
@@ -115,7 +115,7 @@
             </div>
         </div>
 
-        <div class="col s12 m3 l3">
+        <div class="col s6 m3 l3">
             <div class="card hoverable">
                 <div class="card-image waves-effect waves-block waves-light">
                     <img class="activator" src="../images/comp.jpg">
@@ -129,7 +129,7 @@
             </div>
         </div>
 
-        <div class="col s12 m3 l3">
+        <div class="col s6 m3 l3">
             <div class="card hoverable">
                 <div class="card-image waves-effect waves-block waves-light">
                     <img class="activator" src="../images/and.jpg">
