@@ -96,9 +96,15 @@ body{
 #proj.parallax-container {
     height: auto !important;
 }
+#pr.parallax-container {
+    height: auto !important;
+}
 .card-reveal
 {
   font-size: 20px;
+}
+.control-buttons li.active {
+    background: white;
 }
 
 </style>
@@ -128,20 +134,20 @@ body{
         
             <ul class="right hide-on-med-and-down" >
                 <li><a href="pages/aboutus.html">About Us</a></li>
-                <li><a href="#">Team</a></li>
+                <li><a href="#team">Team</a></li>
                 <li><a href="pages/zeal.php">Zealicon'16</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">Contributions</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#cont">Contributions</a></li>
+                <li><a href="#contact">Contact Us</a></li>
                  
             </ul>
             <ul class="side-nav" id="mobile-demo">
                 <li><a href="pages/aboutus.html">About Us</a></li>
-                <li><a href="#">Team</a></li>
-                <li><a href="#">Zealicon'16</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">Contributions</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="pages/zeal.php">Zealicon'16</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#cont">Contributions</a></li>
+                <li><a href="#contact">Contact Us</a></li>
                 
             </ul>
             <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -168,45 +174,58 @@ body{
 
 
 <!-- Our Area of Expertise -->
-<div class="container">
-<h2 class="header center black-text"><b>OUR AREA OF EXPERTISE </b></h2>
+ 
+<div class="parallax-container" id="pr">
+<div class="parallax"><img src="images/B12.jpg"></div>
+
+<div class="container ">
+    <h2 class="header center black-text "><b>OUR AREA OF EXPERTISE</b></h2>
+    <div class="row" >
+        <div class="col s4 m4 l4">
+            <div class="card hoverable" style="border-radius: 50%">
+                <div class="card-image waves-effect waves-block waves-light">
+                     <img  src="images/app.png">
+                </div>
+            </div>
+              <h4 class="center ">ANDROID APP</h4>
+        </div>
+
+        <div class="col s4 m4 l4">
+            <div class="card hoverable" style="border-radius: 50%">
+                <div class="card-image waves-effect waves-block waves-light">
+                     <img  src="images/iot2.png">
+                </div>
+            </div>
+              <h4 class="center ">IOT DEVICES</h4>
+        </div>
+
+        <div class="col s4 m4 l4">
+            <div class="card hoverable" style="border-radius: 50%">
+                <div class="card-image waves-effect waves-block waves-light">
+                     <img  src="images/web.png">
+                </div>
+            </div>
+              <h4 class="center ">WEB DEV</h4>
+        </div>
+         
+
+          
+     </div>
 </div>
-
-<div class="row">
-
-      <div class="col s4">
-        <figure>
-        <img src="images/web.png" alt="" class="circle responsive-img">
-        <figcaption style="font-size: 25px">WEB DEVELOPMENT</figcaption>
-        </figure>
-      </div>
-      <div class="col s4">
-      <figure>
-        <img src="images/app.png" alt="" class="circle responsive-img">
-        <figcaption style="font-size: 25px">APPLICATION DEVELOPMENT</figcaption>
-      </figure>
-      </div>
-      <div class="col s4">
-      <figure>
-        <img src="images/iot.png" alt="" class="circle responsive-img">
-        <figcaption style="font-size: 25px">INTERNET OF THINGS</figcaption>
-      </figure>
-      </div>
-
-    </div>
-
-
+</div>
 
 
 
 <!-- current event on the laptop-->
-<div class=" container laptop" style="margin-top: 1cm;">
+<div id="events" style="background:#D9D9D9">
+<h2 class="header center black-text" ><b>CURRENT EVENTS</b></h2>
+<div class=" container laptop " style="margin-top: 1cm;" >
   <div class="upper">
-      <img class="current" src="http://images.anandtech.com/doci/7143/MSFT_logo_png_678x452.png">
+      <img class="current" src="images/zeal1.jpg">
   </div>
   <div class="lower"></div>
 </div>       
-  
+</div>
 
 
 
@@ -216,9 +235,9 @@ body{
 <div class="parallax"><img src="images/a7.jpg"></div>
 
 <div class="container">
-    <h2 class="header center black-text"><b>EVENTS</b></h2>
+    <h2 class="header center black-text"><b>PAST EVENTS</b></h2>
     <div class="row">
-        <div class="col s12 m4 l4">
+        <div class="col s6 m4 l4">
             <div class="card hoverable">
                 <div class="card-image waves-effect waves-block waves-light">
                     <img class="activator" src="images/hack.jpg">
@@ -234,7 +253,7 @@ body{
             </div>
         </div>
 
-        <div class="col s12 m4 l4">
+        <div class="col s6 m4 l4">
             <div class="card hoverable">  
                 <div class="card-image waves-effect waves-block waves-light">
                     <img class="activator" src="images/casso.jpg">
@@ -248,7 +267,7 @@ body{
             </div>
         </div>
 
-        <div class="col s12 m4 l4">
+        <div class="col s6 m4 l4">
             <div class="card hoverable">
                 <div class="card-image waves-effect waves-block waves-light">
                     <img class="activator" src="images/comp.jpg">
@@ -262,13 +281,13 @@ body{
             </div>
         </div>
 
-        <div class="col s12 m4 l4">
+        <div class="col s6 m4 l4">
             <div class="card hoverable">
                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="images/and.jpg">
+                    <img class="activator" src="images/and1.png">
                 </div>
                 <div class="card-content center">
-                    <span class="card-title activator grey-text text-darken-4 ">Android App Dev</span>
+                    <span class="card-title activator grey-text text-darken-4 ">Android App Development</span>
                 </div>
                 <div class="card-reveal center"  id="rev">
                     <span class="card-title grey-text text-darken-4"> Android App Dev <i class="mdi-navigation-close right"></i> </span><br>
@@ -277,10 +296,10 @@ body{
             </div>
         </div>
 
-        <div class="col s12 m4 l4">
+        <div class="col s6 m4 l4">
             <div class="card hoverable">
                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="images/wind.jpg">
+                    <img class="activator" src="images/win.png">
                 </div>
                 <div class="card-content center">
                     <span class="card-title activator grey-text text-darken-4">Windows App Dev</span>
@@ -292,13 +311,13 @@ body{
             </div>
         </div>
 
-        <div class="col s12 m4 l4">
+        <div class="col s6 m4 l4">
             <div class="card hoverable">
                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="images/iot.jpg">
+                    <img class="activator" src="images/iot3.jpg">
                 </div>
                 <div class="card-content center">
-                    <span class="card-title activator grey-text text-darken-4">IOT Hands On </span>
+                    <span class="card-title activator grey-text text-darken-4">IOT INTRODUCTION </span>
                 </div>
                 <div class="card-reveal center"  id="rev">
                     <span class="card-title grey-text text-darken-4">IOT Hands On <i class="mdi-navigation-close right"></i></span><br>
@@ -322,7 +341,7 @@ body{
 <!-- our contributions-->
 
 
-
+<div style="background:#0CBFD3" id="cont">
 <div class="container">
 <h2 class="header center black-text"><b>OUR &nbsp;&nbsp; CONTRIBUTIONS</b></h2>
 </div>
@@ -457,8 +476,8 @@ body{
     <!-- Controls -->
     <ul id="control-buttons" class="control-buttons"></ul>
   </section>
-
-
+<br><br>
+</div>
 
 
 
@@ -485,6 +504,7 @@ body{
  
 
 <!--our team-->
+<div id="team">
 <div class="parallax-container"  >
 <div class="parallax"><img src="images/parallax.png"></div>
 
@@ -493,7 +513,7 @@ body{
 </div>
 </div>
     
-
+</div>
 
 
 <!-- Image Galary -->
@@ -535,8 +555,8 @@ body{
 </div>
 <div class="footer-copyright light-blue darken-2 foot" style="font-size:15px">
     <div class="container center">
-        Made by <a class="indigo-text text-darken-4" href="#" style="margin-left:0.5em">Microsoft Mobile Innovation Lab.</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thanks to <a class="indigo-text text-darken-4" href="http://materializecss.com/" style="margin-left:0.5em">materialize_css .</a>
-    </div>
+        Made by <a class="indigo-text text-darken-4" href="index.html" style="margin-left:0.5em">Microsoft Mobile Innovation Lab.</a> 
+        </div>
 </div>
 </footer>
 
