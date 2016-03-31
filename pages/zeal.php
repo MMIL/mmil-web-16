@@ -24,6 +24,15 @@
  body{
   font-family: 'Kaushan Script', cursive !important;
 }
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
 #proj.parallax-container {
     height: auto !important;
 }
@@ -43,24 +52,24 @@
 <nav class="light-blue darken-2" style="height: 70px">
     <div class="container">
         <div class="nav-wrapper">
-        <a href="#" class="brand-logo"><img src="../images/logo1.png"></a>
+        <a href="../index.html" class="brand-logo"><img src="../images/logo1.png"></a>
         
             <ul class="right hide-on-med-and-down">
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Team</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="../index.html#team">Team</a></li>
                 <li><a href="#">Zealicon'16</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">Contributions</a></li>
-                <li><a href="#about">Contact Us</a></li>
+                <li><a href="../index.html#events">Events</a></li>
+                <li><a href="../index.html#cont">Contributions</a></li>
+                <li><a href="../index.html#contact">Contact Us</a></li>
                  
             </ul>
-            <ul class="side-nav" id="mobile-demo">
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Team</a></li>
+            <ul class="side-nav" id="nav-mobile">
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="../index.html#team">Team</a></li>
                 <li><a href="#">Zealicon'16</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">Contributions</a></li>
-                <li><a href="#about">Contact Us</a></li>
+                <li><a href="../index.html#events">Events</a></li>
+                <li><a href="../index.html#cont">Contributions</a></li>
+                <li><a href="../index.html#contact">Contact Us</a></li>
                 
             </ul>
             <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
