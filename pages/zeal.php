@@ -97,7 +97,7 @@ body {
         <div class="col s6 m3 l3">
             <div class="card hoverable">
                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="../images/hack.jpg">
+                    <img class="activator" src="../images/code.jpg">
                 </div>
                 <div class="card-content center">
                     <span class="card-title activator grey-text text-darken-4 ">JSS Hackathon</span>
@@ -113,7 +113,7 @@ body {
         <div class="col s6 m3 l3">
             <div class="card hoverable">
                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="../images/casso.jpg">
+                    <img class="activator" src="../images/tech.jpg">
                 </div>
                 <div class="card-content center">
                     <span class="card-title activator grey-text text-darken-4">Casopian Wars</span>
@@ -127,7 +127,7 @@ body {
         <div class="col s6 m3 l3">
             <div class="card hoverable">
                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="../images/comp.jpg">
+                    <img class="activator" src="../images/quiz.jpg">
                 </div>
                 <div class="card-content center">
                     <span class="card-title activator grey-text text-darken-4">Compequizicon</span>
@@ -141,7 +141,7 @@ body {
         <div class="col s6 m3 l3">
             <div class="card hoverable">
                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="../images/and.jpg">
+                    <img class="activator" src="../images/ring.jpg">
                 </div>
                 <div class="card-content center">
                     <span class="card-title activator grey-text text-darken-4 ">Android App Dev</span>
