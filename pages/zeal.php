@@ -100,10 +100,10 @@ body {
                     <img class="activator" src="../images/code.jpg">
                 </div>
                 <div class="card-content center">
-                    <span class="card-title activator grey-text text-darken-4 ">JSS Hackathon</span>
+                    <span class="card-title activator grey-text text-darken-4 ">Code-Ageddon</span>
                 </div>
                 <div class="card-reveal center" id="rev">
-                    <span class="card-title grey-text text-darken-4">JSS Hackathon<i class="mdi-navigation-close right"></i></span>
+                    <span class="card-title grey-text text-darken-4">Code-Ageddon<i class="mdi-navigation-close right"></i></span>
                     <p>Conducted JSS Hackathon 2k15 conducted at JSSATE Noida funded by Microsoft</p>
 
                 </div>
@@ -116,10 +116,10 @@ body {
                     <img class="activator" src="../images/tech.jpg">
                 </div>
                 <div class="card-content center">
-                    <span class="card-title activator grey-text text-darken-4">Casopian Wars</span>
+                    <span class="card-title activator grey-text text-darken-4">Technovision'16</span>
                 </div>
                 <div class="card-reveal center"  id="rev">
-                    <span class="card-title grey-text text-darken-4">Casopian Wars, Zealicon 2015<i class="mdi-navigation-close right"></i></span>
+                    <span class="card-title grey-text text-darken-4">Technovision'16<i class="mdi-navigation-close right"></i></span>
                     <p> Conducted Casopian Wars - An evevt in which student present there Apps for various platformsconducted at Zealicon 2015</p></div>
             </div>
         </div>
@@ -144,10 +144,10 @@ body {
                     <img class="activator" src="../images/ring.jpg">
                 </div>
                 <div class="card-content center">
-                    <span class="card-title activator grey-text text-darken-4 ">Android App Dev</span>
+                    <span class="card-title activator grey-text text-darken-4 ">Ring Ring</span>
                 </div>
                 <div class="card-reveal center"  id="rev">
-                    <span class="card-title grey-text text-darken-4"> Android App Dev <i class="mdi-navigation-close right"></i> </span>
+                    <span class="card-title grey-text text-darken-4"> Ring Ring<i class="mdi-navigation-close right"></i> </span>
                     <p>A Workshop on Android App Development </p>
                 </div>
             </div>
