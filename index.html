@@ -1,1444 +1,1451 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
- 
-<title>MMIL</title>
+  <!DOCTYPE html>
+  <html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+   
+  <title>MMIL</title>
 
-<!-- CSS  -->
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<link rel="stylesheet" type="text/css" href="css/materialize.css">
-<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <!-- CSS  -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/materialize.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 
 
-<link rel="stylesheet" href="css/owl.carousel.min.css">
-<link rel="stylesheet" href="css/owl.theme.default.css">
-<!--logo font-->
-<link href='https://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
-<!--Import Google Icon Font-->
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-<link rel="shortcut icon" type="image/x-icon" href="icon.ico">
-<!--this link is for the social icons-->
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-<style type="text/css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.css">
+  <!--logo font-->
+  <link href='https://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link rel="shortcut icon" type="image/x-icon" href="icon.ico">
+  <!--this link is for the social icons-->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <style type="text/css">
 
- 
-body{
-  font-family: 'Kaushan Script', cursive !important;
-}
- 
-.imgC1 { position:absolute; top: 1%; left: 60%; z-index: 3;width:7%;margin-top:15%; }
-.imgD1 { position:absolute; top: 1%; left: 40%; z-index: 3;width:7%;margin-top:15%; }
-.imgE1 { position:absolute; top: 1%; left: 60%; z-index: 3;width:7%;margin-top:10%; }
-.imgF1 { position:absolute; top: 1%; left: 40%; z-index: 3;width:7%;margin-top:10%; }
-.imgJ1 { position:absolute; top: 1%; left: 50%; z-index: 3;width:7%;margin-top:7%; }
-
- 
- body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
+   
+  body{
+    font-family: 'Kaushan Script', cursive !important;
   }
+   
+  .imgC1 { position:absolute; top: 1%; left: 60%; z-index: 3;width:7%;margin-top:15%; }
+  .imgD1 { position:absolute; top: 1%; left: 40%; z-index: 3;width:7%;margin-top:15%; }
+  .imgE1 { position:absolute; top: 1%; left: 60%; z-index: 3;width:7%;margin-top:10%; }
+  .imgF1 { position:absolute; top: 1%; left: 40%; z-index: 3;width:7%;margin-top:10%; }
+  .imgJ1 { position:absolute; top: 1%; left: 50%; z-index: 3;width:7%;margin-top:7%; }
 
-  main {
-    flex: 1 0 auto;
-  }
-     
-.laptop{
-  height:50vw;
-  
-}
+   
+   body {
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+    }
 
-.upper {
-  width: 90%;
-  height: 80%;
-  background: #3d4144;
-  border: 2px solid #eaeaea;
-  border-bottom: none;
-  border-radius: 1.5rem 1.5rem 0 0;
-  margin-left: 5%;
-  box-shadow: inset 0 0 2px 2px #222;
-  position: relative;
-}
-.current {
-  width: 95%;
-  height: 90%;
-    max-width: 100%;
-    max-height: auto;
-  display: block;
-  content: "";
-  top: 5%;
-  left: 2.5%;
-  position: absolute;
-}
-
-
-.lower {
-  width: 100%;
-  height: 2rem;
-  background: #eaeaea;
-  border-radius: 2px;
-  position: relative;
-}
-.lower:before {
-  display: block;
-  content: "";
-  position: absolute;
-  width: 20%;
-  height: 0.8rem;
-  background: #a1a1a1;
-  left: 40%;
-  top: 0;
-  border-radius: 0 0 0.25rem 0.25rem;
-}
- /*bottom line*/
-.lower:after {
-  display: block;
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 0.75rem;
-  background: #bababa;
-  top: 2rem;
-  border-bottom-right-radius: 7.5rem 2.5rem;
-  border-bottom-left-radius: 7.5rem 2.5rem;
-}
-#proj.parallax-container {
-    height: auto !important;
-}
-#pr.parallax-container {
-    height: auto !important;
-}
-#te.parallax-container {
-    height: auto !important;
-}
-.card-reveal
-{
-  font-size: 20px;
-}
-.control-buttons li.active {
-    background: white;
-
-
-}
-
-.c{
-  position: relative;
-  margin: 0.5rem 0 1rem 0;
-  border-radius: 2em;
-  width:98%;
- background-color:  #0d47a1;
-}
-
-.ca.card {
-          position: relative;
-          margin: 0.5rem 0 1rem 0;
-        background-color: #fff;
-          transition: box-shadow .25s;
-          border-radius: 50% / 10%; 
-        width:98%;
-  }
-.ca.card .card-image img {
-    display: block;    
-      border-radius: 20px 20px 0 0;
-    position: relative;    
-    left: 0;      
-    right: 0;     
-    top: 0;     
-    bottom: 0;     
-          width: 100%;
-  } 
-.ca.card .card-content {
-          padding: 1px;
-        border-radius: 0 0 2px 2px
-  }   } 
-.ca.card .card-content ul {
-          margin-left: 0;
-          color: inherit
-  }
-.ca.card .card-action {
-          border-top: 1px solid rgba(160, 160, 160, 0.2);
-        padding: 20px;
-  }
-.ca.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating) {
-          color: black;
-          
-        margin-left: 7%;
-          transition: color .3s ease;
-          text-transform: uppercase;
-        }
-/*after hover color of next and pevious button*/
-.owl-theme .owl-controls .owl-nav [class*=owl-]:hover {
-    background: white;
-    color:black;
-     
-}
-
-/*Initial color of next and pevious button*/
-.owl-theme .owl-controls .owl-nav [class*=owl-] {
-   background: #0d47a1;
- }
- .owl-carousel{
-  width:auto;
- }
-@import url(http://fonts.googleapis.com/css?family=Istok+Web);
-@keyframes slidy {
-0% { left: 0%; }
-20% { left: 0%; }
-25% { left: -100%; }
-45% { left: -100%; }
-50% { left: -200%; }
-70% { left: -200%; }
-75% { left: -300%; }
-95% { left: -300%; }
-100% { left: -400%; }
-}
-body, figure { 
-  margin: 0; background: #101010;
-  font-family: Istok Web, sans-serif;
-  font-weight: 100;
-}
-div#captioned-gallery { 
-  width: 95%; overflow: hidden; 
-}
-figure.slider { 
-  position: relative; width: 500%;
-  font-size: 0; animation: 20s slidy infinite; 
-}
-figure.slider figure { 
-  width: 20%; height: auto;
-  display: inline-block;  position: inherit; 
-}
-figure.slider img { width: 100%; height: auto; }
-figure.slider figure figcaption { 
-  position: absolute; bottom: 0;
-  background: rgba(0,0,0,0.4);
-  color: #fff; width: 100%;
-  font-size: 2rem; padding: .6rem; 
-}
-
-</style>
-
-
-</head>
-<body id="top" class="scrollspy">
-
-<!-- Pre Loader -->
-<div id="loader-wrapper">
-<div id="loader"></div>
-
-<div class="loader-section section-left"></div>
-<div class="loader-section section-right"></div>
-
-</div>
-
-
-
-
-<!--Navigation-->
-<div class="navbar-fixed">
-<nav class="light-blue darken-2" style="height: 70px" >
-    <div class="container" >
-        <div class="nav-wrapper">
-        <a href="index.html" class="brand-logo"><img src="images/logo1.png"></a>
-        
-            <ul class="right hide-on-med-and-down" >
-                <li><a href="pages/aboutus.html">About Us</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="pages/zeal.php">Zealicon'16</a></li>
-                <li><a href="#events">Events</a></li>
-                <li><a href="#cont">Contributions</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-                 
-            </ul>
-            <ul class="side-nav" id="nav-mobile">
-                <li><a href="pages/aboutus.html">About Us</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="pages/zeal.php">Zealicon'16</a></li>
-                <li><a href="#events">Events</a></li>
-                <li><a href="#cont">Contributions</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-                
-            </ul>
-            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-        </div>
-    </div>
-</nav>
-</div>
-
-<!--ANIMATION AND MAIN DIV-->
-
-
-<div   style="background: #FEE1A5;">
-<div class="container"> 
-    <img class="responsive-img imgA1" src="coding2.jpg">
-
-
-    <img class="imgC1" src="css.png" >
-    <img class="imgD1" src="html.png" >
-    <img class="imgE1" src="android.png">
-    <img class="imgF1" src="windows.png">
-     <img class="imgJ1" src="pi.png">
-</div>
-</div>
-
-
-<!-- Our Area of Expertise -->
- 
-<div class="parallax-container" id="pr">
-<div class="parallax"><img src="images/B12.jpg"></div>
-
-<div class="container ">
-    <h2 class="header center black-text flow-text"><b>OUR AREA OF EXPERTISE</b></h2>
-    <div class="row" >
-        <div class="col s4 m4 l4">
-            <div class="card hoverable" style="border-radius: 50%">
-                <div class="card-image circle waves-effect waves-block waves-light">
-                     <img  src="images/app.png">
-                </div>
-            </div>
-              <h4 class="center flow-text ">APP DEVELOPMENT</h4>
-        </div>
-
-        <div class="col s4 m4 l4">
-            <div class="card hoverable" style="border-radius: 50%">
-                <div class="card-image circle waves-effect waves-block waves-light">
-                     <img  src="images/iot2.png">
-                </div>
-            </div>
-              <h4 class="center flow-text">IOT DEVICES</h4>
-        </div>
-
-        <div class="col s4 m4 l4">
-            <div class="card hoverable" style="border-radius: 50%">
-                <div class="card-image circle waves-effect waves-block waves-light">
-                     <img  src="images/web.png">
-                </div>
-            </div>
-              <h4 class="center flow-text">WEB DEV</h4>
-        </div>
-         
-
-          
-     </div>
-</div>
-</div>
-
-<!-- current event on the laptop-->
-<div id="events" style="background:#D9D9D9">
-<h2 class="header center black-text flow-text" ><b>CURRENT EVENTS</b></h2>
-<div class=" container laptop " style="margin-top: 1cm;" >
-  <div class="upper">
-
- <div id="captioned-gallery" class="current">
-  <figure class="slider">
-    <figure>
-      <img src="images/flex.jpg">
-    </figure>
-    <figure>
-      <img src="images/code1.jpg">
-    </figure>
-    <figure>
-      <img src="images/tech3.jpg">
-    </figure>
-    <figure>
-      <img src="images/ring1.jpg">
-    </figure>
-    <figure>
-      <img src="images/quiz1.jpg">
-    </figure>
-  </figure>
-</div>
-</div>
-  <div class="lower"></div>
-</div>       
-</div>
-
-
-<!-- events-->
-
-<div class="parallax-container" id="proj">
-<div class="parallax"><img src="images/a7.jpg"></div>
-
-<div class="container">
-    <h2 class="header center black-text flow-text"><b>PAST EVENTS</b></h2>
-    <div class="row">
-        <div class="col s12 m4 l4">
-            <div class="card hoverable">
-                <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="images/hack.jpg">
-                </div>
-                <div class="card-content center">
-                    <span class=" activator grey-text text-darken-4 flow-text">JSS Hackathon 2015</span>
-                </div>
-                <div class="card-reveal center" id="rev">
-                    <span class="card-title grey-text text-darken-4">JSS Hackathon 2015<i class="mdi-navigation-close right"></i></span><br>
-                    <p>Conducted JSS Hackathon 2k15 conducted at JSSATE Noida funded by Microsoft</p>
-
-                </div>
-            </div>
-        </div>
-
-        <div class="col s12 m4 l4">
-            <div class="card hoverable">  
-                <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="images/casso.jpg">
-                </div>
-                <div class="card-content center">
-                    <span class=" activator grey-text text-darken-4 flow-text">Cassopian Wars 2015</span>
-                </div>
-                <div class="card-reveal center"  id="rev">
-                    <span class="card-title grey-text text-darken-4  ">Cassopian Wars, Zealicon 2015<i class="mdi-navigation-close right"></i></span><br>
-                    <p  > Conducted Cassopian Wars - An evevt in which student present there Apps for various platforms conducted at Zealicon 2015</p></div>
-            </div>
-        </div>
-
-        <div class="col s12 m4 l4">
-            <div class="card hoverable">
-                <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="images/comp.jpg">
-                </div>
-                <div class="card-content center">
-                    <span class="activator grey-text text-darken-4 flow-text">Compequizicon 2015</span>
-                </div>
-                <div class="card-reveal center"  id="rev">
-                    <span class="card-title grey-text text-darken-4">Compequizicon, Zealicon 2015 <i class="mdi-navigation-close right"></i></span><br>
-                    <p >Organised Compequizicon - A technical IT-quiz event with hurdels and level conducted at Zealicon 2015</p> </div>
-            </div>
-        </div>
-
-        <div class="col s12 m4 l4">
-            <div class="card hoverable">
-                <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="images/and1.png">
-                </div>
-                <div class="card-content center">
-                    <span class="  activator grey-text text-darken-4 flow-text">Android App Development</span>
-                </div>
-                <div class="card-reveal center"  id="rev">
-                    <span class="card-title grey-text text-darken-4"> Android App Dev <i class="mdi-navigation-close right"></i> </span><br>
-                    <p>A Workshop on Android App Development </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col s12 m4 l4">
-            <div class="card hoverable">
-                <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="images/win.png">
-                </div>
-                <div class="card-content center">
-                    <span class="activator grey-text text-darken-4 flow-text">Windows App Development</span>
-                </div>
-                <div class="card-reveal center"  id="rev">
-                    <span class="card-title grey-text text-darken-4">Windows App Dev <i class="mdi-navigation-close right"></i></span><br>
-                    <p>A Workshop on Windows App Development</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col s12 m4 l4">
-            <div class="card hoverable">
-                <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="images/iot3.jpg">
-                </div>
-                <div class="card-content center">
-                    <span class="activator grey-text text-darken-4 flow-text" >Introduction To IOT Devices</span>
-                </div>
-                <div class="card-reveal center"  id="rev">
-                    <span class="card-title grey-text text-darken-4">IOT Hands On <i class="mdi-navigation-close right"></i></span><br>
-                    <p>A Workshop on Internet of things in which Students where taught to contact various sensors with raspberry pi and ardiuno</p>
-                </div>
-            </div>
-        </div>
-          
-     </div>
-</div>
-</div>        
-
-
-
-<!-- our contributions-->
-
-
-<div id="cont " style="background:#1e88e5">
-<div >
-    <div class="container">
-<h2 class="center black-text flow-text" ><b>OUR &nbsp;&nbsp; CONTRIBUTIONS</b></h2>
-</div>
-
-    <div class="owl-carousel container" >
-            <div class="">
-            <div class="card hoverable c"  >
-                <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="images/01.png">
-                </div>
-                <div class="card-content center">
-                    <span class=" activator white-text text-darken-4 flow-text">SkyNet Browser</span>
-                </div>
-                <div class="card-reveal center" id="rev">
-                    <span class="card-title grey-text text-darken-4">SkyNet Browser<i class="mdi-navigation-close right"></i></span><br>
-                    <p>It is a fast browsing application that provides several features. It contains an interactive user interface that provides a large number of functions. It provides the quick links to some most visited pages such as Bing, Google,Gmail etc. It also provides an easy mailing capability to the user .</p>
-
-                </div>
-            </div>
-        </div>
-            <div class=" ">
-            <div class="card hoverable c">
-                <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="images/03.png">
-                </div>
-                <div class="card-content center">
-                    <span class=" activator white-text text-darken-4 flow-text">UPTU Syllabus</span>
-                </div>
-                <div class="card-reveal center" id="rev">
-                    <span class="card-title grey-text text-darken-4">UPTU Syllabus<i class="mdi-navigation-close right"></i></span><br>
-                    <p>The application includes semester wise syllabus of all the branches of UPTU. It incorporates all the subjects of B. Tech of all major branches. All efforts has been made to keep application simple and fluid with a beautiful interface.</p>
-
-                </div>
-            </div>
-        </div>
-           <div class=" ">
-            <div class="card hoverable c">
-                <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="images/05.jpg">
-                </div>
-                <div class="card-content center">
-                    <span class=" activator white-text text-darken-4 flow-text">My Shortcut</span>
-                </div>
-                <div class="card-reveal center" id="rev">
-                    <span class="card-title grey-text text-darken-4">My Shortcut<i class="mdi-navigation-close right"></i></span><br>
-                    <p>Here are plenty of shortcut app in this market, but what makes this app different is the smoothness and the simple yet interactive interface without any advertisement. The application gives quick access to features such as WiFi, Network, Flight Mode, Marketplace, Email, Messaging Service etc.</p>
-
-                </div>
-            </div>
-        </div>
-           <div class=" ">
-            <div class="card hoverable c">
-                <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="images/06.jpg">
-                </div>
-                <div class="card-content center">
-                    <span class=" activator white-text text-darken-4 flow-text">Easy Add contacts v1.0</span>
-                </div>
-                <div class="card-reveal center" id="rev">
-                    <span class="card-title grey-text text-darken-4">Easy Add contacts v1.0<i class="mdi-navigation-close right"></i></span><br>
-                    <p>The application gives facility to quickly add contacts to Phonebook. The first page contains Basic Details followed by Home Details of Contacts and Finally Work Details with a simple quick and nice interface.</p>
-
-                </div>
-            </div>
-        </div>
-            <div class="col s12 m4 l4">
-            <div class="card hoverable c">
-                <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="images/07.png">
-                </div>
-                <div class="card-content center">
-                    <span class=" activator white-text text-darken-4 flow-text">Words Encyclopedia</span>
-                </div>
-                <div class="card-reveal center" id="rev">
-                    <span class="card-title grey-text text-darken-4">Words Encyclopedia<i class="mdi-navigation-close right"></i></span><br>
-                    <p>This is an awesome all topic reference guide.. The app consists of numerous number of dictionary for different purposes.Each one is capable of explaining the topic of its own interest. Apart from this a basic dictionary 'word-net 2.0' is provided for general purpose.</p>
-
-                </div>
-            </div>
-        </div>
-            <div class="col s12 m4 l4">
-            <div class="card hoverable c">
-                <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="images/08.jpg">
-                </div>
-                <div class="card-content center">
-                    <span class=" activator white-text text-darken-4 flow-text">UPTU Results</span>
-                </div>
-                <div class="card-reveal center" id="rev">
-                    <span class="card-title grey-text text-darken-4">UPTU Results<i class="mdi-navigation-close right"></i></span><br>
-                    <p>The application gives facility to quick access UPTU results of both Lucknow and Noida Region. The application has been designed with a smooth and very quick interface.</p>
-
-                </div>
-            </div>
-        </div>
-            <div class="col s12 m4 l4">
-            <div class="card hoverable c">
-                <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="images/09.jpg">
-                </div>
-                <div class="card-content center">
-                    <span class=" activator white-text text-darken-4 flow-text">Micranet web browser</span>
-                </div>
-                <div class="card-reveal center" id="rev">
-                    <span class="card-title grey-text text-darken-4">Micranet web browser<i class="mdi-navigation-close right"></i></span><br>
-                    <p>Micranet Browser for windows phone enhances your browsing experience provides you excellent Searching,Browsing,Video,Shopping and social experience-all in one package with no compromise with speed.s</p>
-
-                </div>
-            </div>
-        </div>
-            <div class="col s12 m4 l4">
-            <div class="card hoverable c">
-                <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="images/11.jpg">
-                </div>
-                <div class="card-content center">
-                    <span class=" activator white-text text-darken-4 flow-text">Mockify Sonido</span>
-                </div>
-                <div class="card-reveal center" id="rev">
-                    <span class="card-title grey-text text-darken-4">Mockify Sonido<i class="mdi-navigation-close right"></i></span><br>
-                    <p>Prankify your friends and people around you. Surprise them with various Taunt,Warnings,Animals and Cartoons sounds. Play sounds during call to fake background voice on another phone. Mockify Sonido Features- -Contains sounds of Animals,Cartoons,Taunts and Warnings.</p>
-
-                </div>
-            </div>
-        </div>
-            <div class="col s12 m4 l4">
-            <div class="card hoverable c">
-                <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="images/12.jpg">
-                </div>
-                <div class="card-content center">
-                    <span class=" activator white-text text-darken-4 flow-text">Minesweeper</span>
-                </div>
-                <div class="card-reveal center" id="rev">
-                    <span class="card-title grey-text text-darken-4">Minesweeper<i class="mdi-navigation-close right"></i></span><br>
-                    <p>TA simple minesweeper game.</p>
-
-                </div>
-            </div>
-        </div>
-      <div class="col s12 m4 l4">
-            <div class="card hoverable c">
-                <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="images/13.jpg">
-                </div>
-                <div class="card-content center">
-                    <span class=" activator white-text text-darken-4 flow-text">Sudoku solver</span>
-                </div>
-                <div class="card-reveal center" id="rev">
-                    <span class="card-title grey-text text-darken-4">Sudoku solver<i class="mdi-navigation-close right"></i></span><br>
-                    <p>With this Sudoku Solver you can solve all your Sudoku's fast and easily.I you are having trouble with a Sudoku this app comes handy.</p>
-
-                </div>
-            </div>
-        </div>
-      <div class="col s12 m4 l4">
-            <div class="card hoverable c">
-                <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="images/14.jpg">
-                </div>
-                <div class="card-content center">
-                    <span class=" activator white-text text-darken-4 flow-text">JSS Infocenter</span>
-                </div>
-                <div class="card-reveal center" id="rev">
-                    <span class="card-title grey-text text-darken-4">JSS Infocenter<i class="mdi-navigation-close right"></i></span><br>
-                    <p>All the Affairs in the JSSATE College are enlisted in the Application once you login for the same.</p>
-
-                </div>
-            </div>
-        </div>
-      
-          </div>
-</div>
+    main {
+      flex: 1 0 auto;
+    }
+       
+  .laptop{
+    height:50vw;
     
-</div>
+  }
+
+  .upper {
+    width: 90%;
+    height: 80%;
+    background: #3d4144;
+    border: 2px solid #eaeaea;
+    border-bottom: none;
+    border-radius: 1.5rem 1.5rem 0 0;
+    margin-left: 5%;
+    box-shadow: inset 0 0 2px 2px #222;
+    position: relative;
+  }
+  .current {
+    width: 95%;
+    height: 90%;
+      max-width: 100%;
+      max-height: auto;
+    display: block;
+    content: "";
+    top: 5%;
+    left: 2.5%;
+    position: absolute;
+  }
 
 
+  .lower {
+    width: 100%;
+    height: 2rem;
+    background: #eaeaea;
+    border-radius: 2px;
+    position: relative;
+  }
+  .lower:before {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 20%;
+    height: 0.8rem;
+    background: #a1a1a1;
+    left: 40%;
+    top: 0;
+    border-radius: 0 0 0.25rem 0.25rem;
+  }
+   /*bottom line*/
+  .lower:after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0.75rem;
+    background: #bababa;
+    top: 2rem;
+    border-bottom-right-radius: 7.5rem 2.5rem;
+    border-bottom-left-radius: 7.5rem 2.5rem;
+  }
+  #proj.parallax-container {
+      height: auto !important;
+  }
+  #pr.parallax-container {
+      height: auto !important;
+  }
+  #te.parallax-container {
+      height: auto !important;
+  }
+  .card-reveal
+  {
+    font-size: 20px;
+  }
+  .control-buttons li.active {
+      background: white;
 
 
+  }
 
- <!-- Floating Share Button -->
+  .c{
+    position: relative;
+    margin: 0.5rem 0 1rem 0;
+    border-radius: 2em;
+    width:98%;
+   background-color:  #0d47a1;
+  }
 
-<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
-<a class="btn-floating btn-large light-blue darken-2">
-  <i class="fa fa-rocket"> </i>
-</a>
-<ul>
-   <li><a class="btn-floating deep-purple darken-4" href="https://www.facebook.com/groups/JSSNokia/"><i class="fa fa-facebook "></i></a></li>
-   <li><a class="btn-floating blue" href="https://twitter.com/ "><i class="fa fa-twitter "></i></a></li>
-   <li><a class="btn-floating red" href="https://plus.google.com/"><i class="fa fa-google "></i></a></li>
-   <li><a class="btn-floating purple" href="https://github.com/MMIL"><i class="fa fa-github"></i></a></li>
-  
-</ul>
-</div>
-
-
-
- 
-
-<!--our team-->
-<div id="team">
-<div class="parallax-container" id="te"  >
-<div class="parallax"><img src="images/parallax.png"></div>
-
-<div  >
-    <h2 class="header center black-text flow-text" ><b>OUR &nbsp;&nbsp; TEAM</b></h2>
-
-    <div class="owl-carousel " >
-            <div class="item "   >
-              <div class="card ca" >
-            <div class="card-image">
-              <img src="images/saurabh.jpg">
-              
-            </div>
-            <div class="card-content center">
-              <ul>
-                <li><h5>Saurabh Verma</h5></li>
-                <li><h6><b>[Founder]</b></h6></li>
-
-            </ul>
-            </div>
-            <div class="card-action">
-             <div class="social-media-banner center">
-                <a href=""><i class="fa fa-twitter small"></i></a>
-                <a href=""><i class="fa fa-facebook small"></i></a>
-        <a href=""><i class="fa fa-instagram small"></i></a>
-                <a href=""><i class="fa fa-linkedin small"></i></a>
-            </div>
-            </div>
-          </div>
-
-           </div>
-            <div class="item">
-              <div class="card ca">
-            <div class="card-image">
-              <img src="images/Prince.jpg">
-              
-            </div>
-            <div class="card-content center">
-      <ul>
-              <li><h5>Prince Kumar</h5></li>
-                <li><h6><b>[Co-Founder]</b></h6></li>
-        </ul>
-            </div>
-            <div class="card-action">
-              <div class="social-media-banner center">
-                <a href=""><i class="fa fa-twitter small"></i></a>
-                <a href=""><i class="fa fa-facebook small"></i></a>
-                <a href=""><i class="fa fa-instagram small"></i></a>
-                <a href=""><i class="fa fa-linkedin small"></i></a>
-            </div>
-            </div>
-          </div>
-            </div>
-            <div class="item">
-               <div class="card ca">
-            <div class="card-image">
-              <img src="images/itisri.png">
-              
-            </div>
-            <div class="card-content center">
-              <ul>
-                <li><h5>Itishri Singh</h5></li>
-                <li><h6><b>[President]</b></h6></li>
-
-            </ul>
-            </div>
-            <div class="card-action">
-              <div class="social-media-banner center">
-                <a href=""><i class="fa fa-twitter small"></i></a>
-                <a href=""><i class="fa fa-facebook small"></i></a>
-                <a href="https://github.com/itishri123"><i class="fa fa-github small"></i></a>
-                <a href="https://touch.www.linkedin.com/?sessionid=4816177343758336&voyurl=https%3A%2F%2Fwww.linkedin.com%2Fm%2F%3Fsessionid%3D4816177
-        343758336&rs=false&redirectUrl=%23stream#you"><i class="fa fa-linkedin small"></i></a>
-            </div>
-            </div>
-          </div>
-            </div>
-            <div class="item">
-               <div class="card ca">
-            <div class="card-image">
-              <img src="images/tewari.jpg">
-              
-            </div>
-            <div class="card-content center">
-              <ul>
-                <li><h5>Akash Tewari</h5></li>
-                <li><h6><b>[CTC]</b></h6></li>
-
-            </ul>
-            </div>
-            <div class="card-action">
-             <div class="social-media-banner center">
-                <a href=""><i class="fa fa-twitter small"></i></a>
-                <a href=""><i class="fa fa-facebook small"></i></a>
-                <a href=""><i class="fa fa-instagram small"></i></a>
-                <a href=""><i class="fa fa-linkedin small"></i></a>
-            </div>
-            </div>
-          </div>
-            </div>
-            <div class="item">
-               <div class="card ca">
-            <div class="card-image">
-              <img src="images/riddhi.jpg">
-              
-            </div>
-            <div class="card-content center">
-              <ul>
-                <li><h5>Riddhi Agarwal</h5></li>
-                <li><h6><b>[CTC]</b></h6></li>
-
-            </ul>
-            </div>
-            <div class="card-action">
-              <div class="social-media-banner center">
-                <a href=""><i class="fa fa-twitter small"></i></a>
-                <a href=""><i class="fa fa-facebook small"></i></a>
-                <a href=""><i class="fa fa-instagram small"></i></a>
-                <a href=""><i class="fa fa-linkedin small"></i></a>
-            </div>
-            </div>
-          </div>
-            </div>
-            <div class="item">
-               <div class="card ca">
-            <div class="card-image">
-              <img src="images/mohit.jpg">
-              
-            </div>
-            <div class="card-content center">
-              <ul>
-                <li><h5>Mohit Chaudhary</h5></li>
-                <li><h6><b>[General Secretary]</b></h6></li>
-
-            </ul>
-            </div>
-            <div class="card-action">
-              <div class="social-media-banner center">
-                <a href=""><i class="fa fa-twitter small"></i></a>
-                <a href=""><i class="fa fa-facebook small"></i></a>
-                <a href=""><i class="fa fa-instagram small"></i></a>
-                <a href=""><i class="fa fa-linkedin small"></i></a>
-            </div>
-            </div>
-          </div>
-            </div>
-            <div class="item">
-               <div class="card ca">
-            <div class="card-image">
-              <img src="images/anubhav.jpg">
-              
-            </div>
-            <div class="card-content center">
-              <ul>
-                <li><h5>Anubhav Singh</h5></li>
-                <li><h6><b>[Pragmatic Strategist]</b></h6></li>
-
-            </ul>
-            </div>
-            <div class="card-action">
-              <div class="social-media-banner center">
-                <a href="https://twitter.com/experienceflas1"><i class="fa fa-twitter small"></i></a>
-                <a href=""><i class="fa fa-facebook small"></i></a>
-                <a href="www.github.com/gitexperience"><i class="fa fa-github small"></i></a>
-                <a href="https://www.linkedin.com/profile/view?id=347472143"><i class="fa fa-linkedin small"></i></a>
-            </div>
-            </div>
-          </div>
-            </div>
-            <div class="item">
-               <div class="card ca">
-            <div class="card-image">
-              <img src="images/shivbaran.jpg">
-              
-            </div>
-            <div class="card-content center">
-              <ul>
-                <li><h5>Shiv Baran Singh</h5></li>
-                <li><h6><b>[Web Programming Head]</b></h6></li>
-
-            </ul>
-            </div>
-            <div class="card-action">
-              <div class="social-media-banner center">
-                <a href="https://twitter.com/experienceflas1"><i class="fa fa-twitter small"></i></a>
-                <a href=""><i class="fa fa-facebook small"></i></a>
-                <a href="www.github.com/gitexperience"><i class="fa fa-github small"></i></a>
-                <a href="https://www.linkedin.com/profile/view?id=347472143"><i class="fa fa-linkedin small"></i></a>
-            </div>
-            </div>
-          </div>
-            </div>
-            <div class="item">
-               <div class="card ca">
-            <div class="card-image">
-              <img src="images/arman.png">
-              
-            </div>
-            <div class="card-content center">
-              <ul>
-                <li><h5>Arman Ahmed</h5></li>
-                <li><h6><b>[Linux Department]</b></h6></li>
-
-            </ul>
-            </div>
-            <div class="card-action">
-              <div class="social-media-banner center">
-                <a href=""><i class="fa fa-twitter small"></i></a>
-                <a href=""><i class="fa fa-facebook small"></i></a>
-                <a href=""><i class="fa fa-instagram small"></i></a>
-                <a href=""><i class="fa fa-linkedin small"></i></a>
-            </div>
-            </div>
-          </div>
-            </div>
-            <div class="item">
-               <div class="card ca">
-            <div class="card-image">
-              <img src="images/aakash.jpg">
-              
-            </div>
-            <div class="card-content center">
-              <ul>
-                <li><h5>Akash Chandoke</h5></li>
-                <li><h6><b>[DB]</b></h6></li>
-
-            </ul>
-            </div>
-            <div class="card-action">
-              <div class="social-media-banner center">
-                <a href=""><i class="fa fa-twitter small"></i></a>
-                <a href=""><i class="fa fa-facebook small"></i></a>
-                <a href=""><i class="fa fa-instagram small"></i></a>
-                <a href=""><i class="fa fa-linkedin small"></i></a>
-            </div>
-            </div>
-          </div>
-            </div>
-            <div class="item">
-               <div class="card ca">
-            <div class="card-image">
-              <img src="images/Vini.jpg">
-              
-            </div>
-            <div class="card-content center">
-              <ul>
-                <li><h5>Vini Maheshwari</h5></li>
-                <li><h6><b>[Developer]</b></h6></li>
-
-            </ul>
-            </div>
-            <div class="card-action">
-              <div class="social-media-banner center">
-                <a href="https://twitter.com/MaheshwariVini"><i class="fa fa-twitter small"></i></a>
-                <a href="https://github.com/vinimaheshwari02"><i class="fa fa-github small"></i></a>
-                <a href=""><i class="fa fa-instagram small"></i></a>
-                <a href="https://www.linkedin.com/profile/view?id=AAIAABuKo-YBq6YbiMYv1P0_CUjLm_Z8Q7WlbvM&trk=nav_responsive_tab_profilehttps://twitter.com/MaheshwariVini"><i class="fa fa-linkedin small"></i></a>
-            </div>
-            </div>
-          </div>
-            </div>
-            <div class="item">
-               <div class="card ca">
-            <div class="card-image">
-              <img src="images/anant.jpg">
-              
-            </div>
-            <div class="card-content center">
-              <ul>
-                <li><h5>Anant Kumar Singh</h5></li>
-                <li><h6><b>[Developer]</b></h6></li>
-
-            </ul>
-            </div>
-            <div class="card-action">
-              <div class="social-media-bannercenter">
-                <a href="https://twitter.com/anantsingh1010"><i class="fa fa-twitter small"></i></a>
-                <a href="https://github.com/anant-dev"><i class="fa fa-facebook small"></i></a>
-                <a href=""><i class="fa fa-github small"></i></a>
-                <a href="https://in.linkedin.com/in/anant-singh-b25892b0"><i class="fa fa-linkedin small"></i></a>
-            </div>
-            </div>
-          </div>
-            </div>
-      <div class="item">
-               <div class="card ca">
-            <div class="card-image">
-              <img src="images/nikhilbhagat.jpg">
-              
-            </div>
-            <div class="card-content center">
-              <ul>
-                <li><h5>Nikhil Bhagat</h5></li>
-                <li><h6><b>[Developer]</b></h6></li>
-
-            </ul>
-            </div>
-            <div class="card-action">
-             <div class="social-media-banner center ">
-                <a href=""><i class="fa fa-twitter small"></i></a>
-                <a href=""><i class="fa fa-facebook small"></i></a>
-                <a href=""><i class="fa fa-instagram small"></i></a>
-                <a href=""><i class="fa fa-linkedin small"></i></a>
-            </div> 
-            </div>
-          </div>
-            </div>
-      <div class="item">
-               <div class="card ca">
-            <div class="card-image">
-              <img src="images/Vibhuti.jpg">
-              
-            </div>
-            <div class="card-content center">
-               <ul>
-                <li><h5>Vibhuti Shukla</h5></li>
-                <li><h6><b>[Developer]</b></h6></li>
-
-            </ul>
-            </div>
-            <div class="card-action">
-              <div class="social-media-banner center">
-                <a href=""><i class="fa fa-twitter small"></i></a>
-                <a href=""><i class="fa fa-facebook small"></i></a>
-                <a href=""><i class="fa fa-instagram small"></i></a>
-                <a href=""><i class="fa fa-linkedin small"></i></a>
-            </div>
-            </div>
-          </div>
-            </div>
-      <div class="item">
-               <div class="card ca">
-            <div class="card-image">
-              <img src="images/sakshi.jpg">
-              
-            </div>
-            <div class="card-content center">
-              <ul>
-                <li><h5>Sakshi Tripathi</h5></li>
-                <li><h6><b>[Developer]</b></h6></li>
-
-            </ul>
-            </div>
-            <div class="card-action">
-              <div class="social-media-banner center">
-                <a href=""><i class="fa fa-twitter small"></i></a>
-                <a href=""><i class="fa fa-facebook small"></i></a>
-                <a href="https://github.com/sakshi29"><i class="fa fa-github small"></i></a>
-                <a href="https://in.linkedin.com/in/sakshi-tripathi-953234102"><i class="fa fa-linkedin small"></i></a>
-            </div>
-            </div>
-          </div>
-            </div>
-      <div class="item">
-               <div class="card ca">
-            <div class="card-image">
-              <img src="images/sumit.jpg">
-              
-            </div>
-            <div class="card-content center">
-              <ul>
-                <li><h5>Sumit Pandir</h5></li>
-                <li><h6><b>[Developer]</b></h6></li>
-
-            </ul>
-            </div>
-            <div class="card-action">
-              <div class="social-media-banner center">
-                <a href=""><i class="fa fa-twitter small"></i></a>
-                <a href=""><i class="fa fa-facebook small"></i></a>
-                <a href=""><i class="fa fa-instagram small"></i></a>
-                <a href=""><i class="fa fa-linkedin small"></i></a>
-            </div>
-            </div>
-          </div>
-            </div>
-      <div class="item">
-               <div class="card ca">
-            <div class="card-image">
-              <img src="images/Kanishk.jpg">
-              
-            </div>
-            <div class="card-content center">
-              <ul>
-                <li><h5>Kanishk Sharma</h5></li>
-                <li><h6><b>[Developer]</b></h6></li>
-
-            </ul>
-            </div>
-            <div class="card-action">
-              <div class="social-media-banner center">
-                <a href="https://twitter.com/Kani3012?lang=en-in"><i class="fa fa-twitter small"></i></a>
-                <a href=""><i class="fa fa-facebook small"></i></a>
-                <a href="https://github.com/kani3012"><i class="fa fa-github small"></i></a>
-                <a href="https://in.linkedin.com/in/kanishk-sharma-79354410a"><i class="fa fa-linkedin small"></i></a>
-            </div>
-            </div>
-          </div>
-            </div>
-      <div class="item">
-               <div class="card ca">
-            <div class="card-image">
-              <img src="images/ayushi.jpg">
-              
-            </div>
-            <div class="card-content center">
-              <ul>
-                <li><h5>Ayushi Rathore</h5></li>
-                <li><h6><b>[Developer]</b></h6></li>
-
-            </ul>
+  .ca.card {
+            position: relative;
+            margin: 0.5rem 0 1rem 0;
+          background-color: #fff;
+            transition: box-shadow .25s;
+            border-radius: 50% / 10%; 
+          width:98%;
+    }
+  .ca.card .card-image img {
+      display: block;    
+        border-radius: 20px 20px 0 0;
+      position: relative;    
+      left: 0;      
+      right: 0;     
+      top: 0;     
+      bottom: 0;     
+            width: 100%;
+    } 
+  .ca.card .card-content {
+            padding: 1px;
+          border-radius: 0 0 2px 2px
+    }   } 
+  .ca.card .card-content ul {
+            margin-left: 0;
+            color: inherit
+    }
+  .ca.card .card-action {
+            border-top: 1px solid rgba(160, 160, 160, 0.2);
+          padding: 20px;
+    }
+  .ca.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating) {
+            color: black;
             
-            </div>
-            <div class="card-action">
-              <div class="social-media-banner center">
-                <a href=""><i class="fa fa-twitter small"></i></a>
-                <a href=""><i class="fa fa-facebook small"></i></a>
-                <a href="https://github.com/AyushiRathore"><i class="fa fa-github small"></i></a>
-                <a href="https://in.linkedin.com/in/ayushi-rathore-23876856"><i class="fa fa-linkedin small"></i></a>
-            </div>
-            </div>
-          </div>
-            </div>
-      <div class="item">
-               <div class="card ca">
-            <div class="card-image">
-              <img src="images/Deepti.jpg">
-              
-            </div>
-            <div class="card-content center">
-              <ul>
-                <li><h5>Deepti Jain</h5></li>
-                <li><h6><b>[Developer]</b></h6></li>
+          margin-left: 7%;
+            transition: color .3s ease;
+            text-transform: uppercase;
+          }
+  /*after hover color of next and pevious button*/
+  .owl-theme .owl-controls .owl-nav [class*=owl-]:hover {
+      background: white;
+      color:black;
+       
+  }
 
-            </ul>
-            </div>
-            <div class="card-action">
-              <div class="social-media-banner center">
-                <a href=""><i class="fa fa-twitter small"></i></a>
-                <a href=""><i class="fa fa-facebook small"></i></a>
-                <a href="https://github.com/deepti1996"><i class="fa fa-github small"></i></a>
-                <a href="https://in.linkedin.com/in/deeptijain9676"><i class="fa fa-linkedin small"></i></a>
-            </div>
-            </div>
-          </div>
-            </div>
-      <div class="item">
-               <div class="card ca">
-            <div class="card-image">
-              <img src="images/divyanshu.jpg">
-              
-            </div>
-            <div class="card-content center" >
-              <ul>
-                <li><h5>Divyanshu Verma</h5></li>
-                <li><h6><b>[Developer]</b></h6></li>
-
-            </ul>
-            </div>
-            <div class="card-action">
-              <div class="social-media-banner center">
-                <a href=""><i class="fa fa-twitter small"></i></a>
-                <a href=""><i class="fa fa-facebook small"></i></a>
-                <a href=""><i class="fa fa-instagram small"></i></a>
-                <a href=""><i class="fa fa-linkedin small"></i></a>
-            </div>
-            </div>
-          </div>
-            </div>
-      <div class="item">
-               <div class="card ca">
-            <div class="card-image">
-              <img src="images/tarun.jpg">
-              
-            </div>
-            <div class="card-content center">
-              <ul>
-                <li><h5>Tarun Garg</h5></li>
-                <li><h6><b>[Developer]</b></h6></li>
-
-            </ul>
-            </div>
-            <div class="card-action">
-              <div class="social-media-banner center">
-                <a href=""><i class="fa fa-twitter small"></i></a>
-                <a href=""><i class="fa fa-facebook small"></i></a>
-                <a href=""><i class="fa fa-instagram small"></i></a>
-                <a href=""><i class="fa fa-linkedin small"></i></a>
-            </div>
-            </div>
-          </div>
-            </div>
-      <div class="item">
-               <div class="card ca">
-            <div class="card-image">
-              <img src="images/akshay.jpg">
-              
-            </div>
-            <div class="card-content center">
-              <ul>
-                <li><h5>Akshay Vashishth</h5></li>
-                <li><h6><b>[Developer]</b></h6></li>
-
-            </ul>
-            </div>
-            <div class="card-action">
-               <div class="social-media-banner center">
-                <a href="https://twitter.com/VashisthaAkshay"><i class="fa fa-twitter small"></i></a>
-                <a href=""><i class="fa fa-facebook small"></i></a>
-                <a href="https://github.com/ajatgd"><i class="fa fa-github small"></i></a>
-                <a href="https://www.linkedin.com/in/akshay-vashistha-9a558778"><i class="fa fa-linkedin small"></i></a>
-            </div>
-            </div>
-          </div>
-            </div>
-
-            <div class="item">
-               <div class="card ca">
-            <div class="card-image">
-              <img src="images/rishabh.png">
-              
-            </div>
-            <div class="card-content center">
-              <ul>
-                <li><h5>Rishabh Singh Chauhan</h5></li>
-                <li><h6><b>[Developer]</b></h6></li>
-
-            </ul>
-            </div>
-            <div class="card-action">
-               <div class="social-media-banner center">
-                <a href="https://twitter.com/VashisthaAkshay"><i class="fa fa-twitter small"></i></a>
-                <a href=""><i class="fa fa-facebook small"></i></a>
-                <a href="https://github.com/ajatgd"><i class="fa fa-github small"></i></a>
-                <a href="https://www.linkedin.com/in/akshay-vashistha-9a558778"><i class="fa fa-linkedin small"></i></a>
-            </div>
-            </div>
-          </div>
-            </div>
-
-            <div class="item">
-               <div class="card ca">
-            <div class="card-image">
-              <img src="images/kp.jpg">
-              
-            </div>
-            <div class="card-content center">
-              <ul>
-                <li><h5>KP Kushal</h5></li>
-                <li><h6><b>[Developer]</b></h6></li>
-
-            </ul>
-            </div>
-            <div class="card-action">
-               <div class="social-media-banner center">
-                <a href="https://twitter.com/VashisthaAkshay"><i class="fa fa-twitter small"></i></a>
-                <a href=""><i class="fa fa-facebook small"></i></a>
-                <a href="https://github.com/ajatgd"><i class="fa fa-github small"></i></a>
-                <a href="https://www.linkedin.com/in/akshay-vashistha-9a558778"><i class="fa fa-linkedin small"></i></a>
-            </div>
-            </div>
-          </div>
-            </div>
-
-            <div class="item">
-               <div class="card ca">
-            <div class="card-image">
-              <img src="images/shivanika.jpg">
-              
-            </div>
-            <div class="card-content center">
-              <ul>
-                <li><h5>Shivanika Shah</h5></li>
-                <li><h6><b>[Developer]</b></h6></li>
-
-            </ul>
-            </div>
-            <div class="card-action">
-               <div class="social-media-banner center">
-                <a href="https://twitter.com/VashisthaAkshay"><i class="fa fa-twitter small"></i></a>
-                <a href=""><i class="fa fa-facebook small"></i></a>
-                <a href="https://github.com/ajatgd"><i class="fa fa-github small"></i></a>
-                <a href="https://www.linkedin.com/in/akshay-vashistha-9a558778"><i class="fa fa-linkedin small"></i></a>
-            </div>
-            </div>
-          </div>
-            </div>
-
-            <div class="item">
-               <div class="card ca">
-            <div class="card-image">
-              <img src="images/shivangi.jpg">
-              
-            </div>
-            <div class="card-content center">
-              <ul>
-                <li><h5>Shivangi Garg</h5></li>
-                <li><h6><b>[Developer]</b></h6></li>
-
-            </ul>
-            </div>
-            <div class="card-action">
-               <div class="social-media-banner center">
-                <a href="https://twitter.com/VashisthaAkshay"><i class="fa fa-twitter small"></i></a>
-                <a href=""><i class="fa fa-facebook small"></i></a>
-                <a href="https://github.com/ajatgd"><i class="fa fa-github small"></i></a>
-                <a href="https://www.linkedin.com/in/akshay-vashistha-9a558778"><i class="fa fa-linkedin small"></i></a>
-            </div>
-            </div>
-          </div>
-            </div>
-
-            <div class="item">
-               <div class="card ca">
-            <div class="card-image">
-              <img src="images/arti.jpg">
-              
-            </div>
-            <div class="card-content center">
-              <ul>
-                <li><h5>Arti Gupta</h5></li>
-                <li><h6><b>[Developer]</b></h6></li>
-
-            </ul>
-            </div>
-            <div class="card-action">
-               <div class="social-media-banner center">
-                <a href="https://twitter.com/VashisthaAkshay"><i class="fa fa-twitter small"></i></a>
-                <a href=""><i class="fa fa-facebook small"></i></a>
-                <a href="https://github.com/ajatgd"><i class="fa fa-github small"></i></a>
-                <a href="https://www.linkedin.com/in/akshay-vashistha-9a558778"><i class="fa fa-linkedin small"></i></a>
-            </div>
-            </div>
-          </div>
-            </div>
-      
-          </div>
-</div>
-</div>
-    
-</div>
-
-
-<footer id="contact" class="light-blue darken-2 scrollspy" style="font-size:15px">
-<div class="container">  
-    <div class="row">
-        <div class="col s12">
-            <form class="col s12" action="contact.php" method="post">
-                <div class="row">
-                    <div class="input-field col s6">
-                        <i class="material-icons prefix white-text">person_pin</i>
-                        <input id="icon_prefix" name="name" type="text" class="validate white-text">
-                        <label for="icon_prefix" class="white-text">First Name</label>
-                    </div>
-                    <div class="input-field col s6">
-                        <i class="material-icons prefix white-text">message</i>
-                        <textarea id="icon_prefix2" name="message" class="materialize-textarea white-text"></textarea>
-                        <label for="icon_prefix2" class="white-text">Message</label>
-                    </div>
-                     
-                    <div class="input-field col s6">
-                        <i class="material-icons prefix white-text">email</i>
-                        <input id="icon_email" name="email" type="email" class="validate white-text">
-                        <label for="icon_email" class="white-text">Email-id</label>
-                    </div>
-                    <div class="col s6 center sub">
-                        <button class="btn waves-effect waves-light light blue darken-4 z-depth-5" type="submit">Submit
-                            <i class="material-icons right white-text">send</i>
-                        </button>
-                    </div>
-                </div>
-            </form>
-        </div>
-         
-</div>
-<div class="footer-copyright light-blue darken-2 foot" style="font-size:15px">
-    <div class="container center">
-        Made by <a class="indigo-text text-darken-4" href="index.html" style="margin-left:0.5em">Microsoft Mobile Innovation Lab.</a> 
-        </div>
-</div>
-</footer>
-
-
-
-
-
-
-
-<!--Import jQuery before materialize.js-->
-       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
-       <script src="js/owl.carousel.js"></script>
-
-
-
-<script type="text/javascript">
+  /*Initial color of next and pevious button*/
+  .owl-theme .owl-controls .owl-nav [class*=owl-] {
+     background: #0d47a1;
+   }
+   .owl-carousel{
+    width:auto;
+   }
   
-   $(document).ready(function(){
-      $(".button-collapse").sideNav(); 
-      $('.parallax').parallax();
-    });
-</script>
- <script>
-      $(document).ready(function(){
+
+  @keyframes slidy {
+  0% {
+    left: 0%;
+  }
+  20% {
+    left: 0%;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}
+
+ 
+div#slider {
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
+div#slider figure img {
+  width: 20%;
+  float: left;
+}
+
+div#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 40s slidy infinite;
+}
+    
+
+  </style>
+
+
+  </head>
+  <body id="top" class="scrollspy">
+
+  <!-- Pre Loader -->
+  <div id="loader-wrapper">
+  <div id="loader"></div>
+
+  <div class="loader-section section-left"></div>
+  <div class="loader-section section-right"></div>
+
+  </div>
+
+
+
+
+  <!--Navigation-->
+  <div class="navbar-fixed">
+  <nav class="light-blue darken-2" style="height: 70px" >
+      <div class="container" >
+          <div class="nav-wrapper">
+          <a href="index.html" class="brand-logo"><img src="images/logo1.png"></a>
+          
+              <ul class="right hide-on-med-and-down" >
+                  <li><a href="pages/aboutus.html">About Us</a></li>
+                  <li><a href="#team">Team</a></li>
+                  <li><a href="pages/zeal.php">Zealicon'16</a></li>
+                  <li><a href="#events">Events</a></li>
+                  <li><a href="#cont">Contributions</a></li>
+                  <li><a href="#contact">Contact Us</a></li>
+                   
+              </ul>
+              <ul class="side-nav" id="nav-mobile">
+                  <li><a href="pages/aboutus.html">About Us</a></li>
+                  <li><a href="#team">Team</a></li>
+                  <li><a href="pages/zeal.php">Zealicon'16</a></li>
+                  <li><a href="#events">Events</a></li>
+                  <li><a href="#cont">Contributions</a></li>
+                  <li><a href="#contact">Contact Us</a></li>
+                  
+              </ul>
+              <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+          </div>
+      </div>
+  </nav>
+  </div>
+
+  <!--ANIMATION AND MAIN DIV-->
+
+
+  <div   style="background: #FEE1A5;">
+  <div class="container"> 
+      <img class="responsive-img imgA1" src="coding2.jpg">
+
+
+      <img class="imgC1" src="css.png" >
+      <img class="imgD1" src="html.png" >
+      <img class="imgE1" src="android.png">
+      <img class="imgF1" src="windows.png">
+       <img class="imgJ1" src="pi.png">
+  </div>
+  </div>
+
+
+  <!-- Our Area of Expertise -->
+   
+  <div class="parallax-container" id="pr">
+  <div class="parallax"><img src="images/B12.jpg"></div>
+
+  <div class="container ">
+      <h2 class="header center black-text flow-text"><b>OUR AREA OF EXPERTISE</b></h2>
+      <div class="row" >
+          <div class="col s4 m4 l4">
+              <div class="card hoverable" style="border-radius: 50%">
+                  <div class="card-image circle waves-effect waves-block waves-light">
+                       <img  src="images/app.png">
+                  </div>
+              </div>
+                <h4 class="center flow-text ">APP<br> DEVELOPMENT</h4>
+          </div>
+
+          <div class="col s4 m4 l4">
+              <div class="card hoverable" style="border-radius: 50%">
+                  <div class="card-image circle waves-effect waves-block waves-light">
+                       <img  src="images/iot2.png">
+                  </div>
+              </div>
+                <h4 class="center flow-text">IOT DEVICES</h4>
+          </div>
+
+          <div class="col s4 m4 l4">
+              <div class="card hoverable" style="border-radius: 50%">
+                  <div class="card-image circle waves-effect waves-block waves-light">
+                       <img  src="images/web.png">
+                  </div>
+              </div>
+                <h4 class="center flow-text">WEB DEVELOPMENT</h4>
+          </div>
+           
+
+            
+       </div>
+  </div>
+  </div>
+
+  <!-- current event on the laptop-->
+  <div id="events" style="background:#D9D9D9">
+  <h2 class="header center black-text flow-text" ><b>CURRENT EVENTS</b></h2>
+    <div class=" container laptop " style="margin-top: 1cm;" >
+      <div class="upper">
+             
+            <div id="slider" class="current">
+              <figure >
+                <img src="images/flex1.jpg" alt="">
+                <img src="images/tech3.jpg" alt="">
+                <img src="images/ring1.jpg" alt="">
+                <img src="images/code2.jpg" alt="">
+              </figure>
+            </div>
+      </div>
+      <div class="lower"></div>
+    </div>       
+  </div>
+
+
+  <!-- events-->
+
+  <div class="parallax-container" id="proj">
+  <div class="parallax"><img src="images/a7.jpg"></div>
+
+  <div class="container">
+      <h2 class="header center black-text flow-text"><b>PAST EVENTS</b></h2>
+      <div class="row">
+          <div class="col s12 m4 l4">
+              <div class="card hoverable">
+                  <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="images/hack.jpg">
+                  </div>
+                  <div class="card-content center">
+                      <span class=" activator grey-text text-darken-4 flow-text">JSS Hackathon 2015</span>
+                  </div>
+                  <div class="card-reveal center" id="rev">
+                      <span class="card-title grey-text text-darken-4">JSS Hackathon 2015<i class="mdi-navigation-close right"></i></span><br>
+                      <p>Conducted JSS Hackathon 2k15 conducted at JSSATE Noida funded by Microsoft</p>
+
+                  </div>
+              </div>
+          </div>
+
+          <div class="col s12 m4 l4">
+              <div class="card hoverable">  
+                  <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="images/casso.jpg">
+                  </div>
+                  <div class="card-content center">
+                      <span class=" activator grey-text text-darken-4 flow-text">Cassopian Wars 2015</span>
+                  </div>
+                  <div class="card-reveal center"  id="rev">
+                      <span class="card-title grey-text text-darken-4  ">Cassopian Wars, Zealicon 2015<i class="mdi-navigation-close right"></i></span><br>
+                      <p  > Conducted Cassopian Wars - An evevt in which student present there Apps for various platforms conducted at Zealicon 2015</p></div>
+              </div>
+          </div>
+
+          <div class="col s12 m4 l4">
+              <div class="card hoverable">
+                  <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="images/comp.jpg">
+                  </div>
+                  <div class="card-content center">
+                      <span class="activator grey-text text-darken-4 flow-text">Compequizicon 2015</span>
+                  </div>
+                  <div class="card-reveal center"  id="rev">
+                      <span class="card-title grey-text text-darken-4">Compequizicon, Zealicon 2015 <i class="mdi-navigation-close right"></i></span><br>
+                      <p >Organised Compequizicon - A technical IT-quiz event with hurdels and level conducted at Zealicon 2015</p> </div>
+              </div>
+          </div>
+
+          <div class="col s12 m4 l4">
+              <div class="card hoverable">
+                  <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="images/and1.png">
+                  </div>
+                  <div class="card-content center">
+                      <span class="  activator grey-text text-darken-4 flow-text">Android App Development</span>
+                  </div>
+                  <div class="card-reveal center"  id="rev">
+                      <span class="card-title grey-text text-darken-4"> Android App Dev <i class="mdi-navigation-close right"></i> </span><br>
+                      <p>A Workshop on Android App Development </p>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col s12 m4 l4">
+              <div class="card hoverable">
+                  <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="images/win.png">
+                  </div>
+                  <div class="card-content center">
+                      <span class="activator grey-text text-darken-4 flow-text">Windows App Development</span>
+                  </div>
+                  <div class="card-reveal center"  id="rev">
+                      <span class="card-title grey-text text-darken-4">Windows App Dev <i class="mdi-navigation-close right"></i></span><br>
+                      <p>A Workshop on Windows App Development</p>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col s12 m4 l4">
+              <div class="card hoverable">
+                  <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="images/iot3.jpg">
+                  </div>
+                  <div class="card-content center">
+                      <span class="activator grey-text text-darken-4 flow-text" >Introduction To IOT Devices</span>
+                  </div>
+                  <div class="card-reveal center"  id="rev">
+                      <span class="card-title grey-text text-darken-4">IOT Hands On <i class="mdi-navigation-close right"></i></span><br>
+                      <p>A Workshop on Internet of things in which Students where taught to contact various sensors with raspberry pi and ardiuno</p>
+                  </div>
+              </div>
+          </div>
+            
+       </div>
+  </div>
+  </div>        
+
+
+
+  <!-- our contributions-->
+
+
+  <div id="cont " style="background:#1e88e5">
+  <div >
+      <div class="container">
+  <h2 class="center black-text flow-text" ><b>OUR &nbsp;&nbsp; CONTRIBUTIONS</b></h2>
+  </div>
+
+      <div class="owl-carousel container" >
+              <div class="">
+              <div class="card hoverable c"  >
+                  <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="images/01.png">
+                  </div>
+                  <div class="card-content center">
+                      <span class=" activator white-text text-darken-4 flow-text">SkyNet Browser</span>
+                  </div>
+                  <div class="card-reveal center" id="rev">
+                      <span class="card-title grey-text text-darken-4">SkyNet Browser<i class="mdi-navigation-close right"></i></span><br>
+                      <p>It is a fast browsing application that provides several features. It contains an interactive user interface that provides a large number of functions. It provides the quick links to some most visited pages such as Bing, Google,Gmail etc. It also provides an easy mailing capability to the user .</p>
+
+                  </div>
+              </div>
+          </div>
+              <div class=" ">
+              <div class="card hoverable c">
+                  <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="images/03.png">
+                  </div>
+                  <div class="card-content center">
+                      <span class=" activator white-text text-darken-4 flow-text">UPTU Syllabus</span>
+                  </div>
+                  <div class="card-reveal center" id="rev">
+                      <span class="card-title grey-text text-darken-4">UPTU Syllabus<i class="mdi-navigation-close right"></i></span><br>
+                      <p>The application includes semester wise syllabus of all the branches of UPTU. It incorporates all the subjects of B. Tech of all major branches. All efforts has been made to keep application simple and fluid with a beautiful interface.</p>
+
+                  </div>
+              </div>
+          </div>
+             <div class=" ">
+              <div class="card hoverable c">
+                  <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="images/05.jpg">
+                  </div>
+                  <div class="card-content center">
+                      <span class=" activator white-text text-darken-4 flow-text">My Shortcut</span>
+                  </div>
+                  <div class="card-reveal center" id="rev">
+                      <span class="card-title grey-text text-darken-4">My Shortcut<i class="mdi-navigation-close right"></i></span><br>
+                      <p>Here are plenty of shortcut app in this market, but what makes this app different is the smoothness and the simple yet interactive interface without any advertisement. The application gives quick access to features such as WiFi, Network, Flight Mode, Marketplace, Email, Messaging Service etc.</p>
+
+                  </div>
+              </div>
+          </div>
+             <div class=" ">
+              <div class="card hoverable c">
+                  <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="images/06.jpg">
+                  </div>
+                  <div class="card-content center">
+                      <span class=" activator white-text text-darken-4 flow-text">Easy Add contacts v1.0</span>
+                  </div>
+                  <div class="card-reveal center" id="rev">
+                      <span class="card-title grey-text text-darken-4">Easy Add contacts v1.0<i class="mdi-navigation-close right"></i></span><br>
+                      <p>The application gives facility to quickly add contacts to Phonebook. The first page contains Basic Details followed by Home Details of Contacts and Finally Work Details with a simple quick and nice interface.</p>
+
+                  </div>
+              </div>
+          </div>
+              <div class="col s12 m4 l4">
+              <div class="card hoverable c">
+                  <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="images/07.png">
+                  </div>
+                  <div class="card-content center">
+                      <span class=" activator white-text text-darken-4 flow-text">Words Encyclopedia</span>
+                  </div>
+                  <div class="card-reveal center" id="rev">
+                      <span class="card-title grey-text text-darken-4">Words Encyclopedia<i class="mdi-navigation-close right"></i></span><br>
+                      <p>This is an awesome all topic reference guide.. The app consists of numerous number of dictionary for different purposes.Each one is capable of explaining the topic of its own interest. Apart from this a basic dictionary 'word-net 2.0' is provided for general purpose.</p>
+
+                  </div>
+              </div>
+          </div>
+              <div class="col s12 m4 l4">
+              <div class="card hoverable c">
+                  <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="images/08.jpg">
+                  </div>
+                  <div class="card-content center">
+                      <span class=" activator white-text text-darken-4 flow-text">UPTU Results</span>
+                  </div>
+                  <div class="card-reveal center" id="rev">
+                      <span class="card-title grey-text text-darken-4">UPTU Results<i class="mdi-navigation-close right"></i></span><br>
+                      <p>The application gives facility to quick access UPTU results of both Lucknow and Noida Region. The application has been designed with a smooth and very quick interface.</p>
+
+                  </div>
+              </div>
+          </div>
+              <div class="col s12 m4 l4">
+              <div class="card hoverable c">
+                  <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="images/09.jpg">
+                  </div>
+                  <div class="card-content center">
+                      <span class=" activator white-text text-darken-4 flow-text">Micranet web browser</span>
+                  </div>
+                  <div class="card-reveal center" id="rev">
+                      <span class="card-title grey-text text-darken-4">Micranet web browser<i class="mdi-navigation-close right"></i></span><br>
+                      <p>Micranet Browser for windows phone enhances your browsing experience provides you excellent Searching,Browsing,Video,Shopping and social experience-all in one package with no compromise with speed.s</p>
+
+                  </div>
+              </div>
+          </div>
+              <div class="col s12 m4 l4">
+              <div class="card hoverable c">
+                  <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="images/11.jpg">
+                  </div>
+                  <div class="card-content center">
+                      <span class=" activator white-text text-darken-4 flow-text">Mockify Sonido</span>
+                  </div>
+                  <div class="card-reveal center" id="rev">
+                      <span class="card-title grey-text text-darken-4">Mockify Sonido<i class="mdi-navigation-close right"></i></span><br>
+                      <p>Prankify your friends and people around you. Surprise them with various Taunt,Warnings,Animals and Cartoons sounds. Play sounds during call to fake background voice on another phone. Mockify Sonido Features- -Contains sounds of Animals,Cartoons,Taunts and Warnings.</p>
+
+                  </div>
+              </div>
+          </div>
+              <div class="col s12 m4 l4">
+              <div class="card hoverable c">
+                  <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="images/12.jpg">
+                  </div>
+                  <div class="card-content center">
+                      <span class=" activator white-text text-darken-4 flow-text">Minesweeper</span>
+                  </div>
+                  <div class="card-reveal center" id="rev">
+                      <span class="card-title grey-text text-darken-4">Minesweeper<i class="mdi-navigation-close right"></i></span><br>
+                      <p>TA simple minesweeper game.</p>
+
+                  </div>
+              </div>
+          </div>
+        <div class="col s12 m4 l4">
+              <div class="card hoverable c">
+                  <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="images/13.jpg">
+                  </div>
+                  <div class="card-content center">
+                      <span class=" activator white-text text-darken-4 flow-text">Sudoku solver</span>
+                  </div>
+                  <div class="card-reveal center" id="rev">
+                      <span class="card-title grey-text text-darken-4">Sudoku solver<i class="mdi-navigation-close right"></i></span><br>
+                      <p>With this Sudoku Solver you can solve all your Sudoku's fast and easily.I you are having trouble with a Sudoku this app comes handy.</p>
+
+                  </div>
+              </div>
+          </div>
+        <div class="col s12 m4 l4">
+              <div class="card hoverable c">
+                  <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="images/14.jpg">
+                  </div>
+                  <div class="card-content center">
+                      <span class=" activator white-text text-darken-4 flow-text">JSS Infocenter</span>
+                  </div>
+                  <div class="card-reveal center" id="rev">
+                      <span class="card-title grey-text text-darken-4">JSS Infocenter<i class="mdi-navigation-close right"></i></span><br>
+                      <p>All the Affairs in the JSSATE College are enlisted in the Application once you login for the same.</p>
+
+                  </div>
+              </div>
+          </div>
+        
+            </div>
+  </div>
+      
+  </div>
+
+
+
+
+
+   <!-- Floating Share Button -->
+
+  <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+  <a class="btn-floating btn-large light-blue darken-2">
+    <i class="fa fa-rocket"> </i>
+  </a>
+  <ul>
+     <li><a class="btn-floating deep-purple darken-4" href="https://www.facebook.com/groups/JSSNokia/"><i class="fa fa-facebook "></i></a></li>
+     <li><a class="btn-floating blue" href="https://twitter.com/ "><i class="fa fa-twitter "></i></a></li>
+     <li><a class="btn-floating red" href="https://plus.google.com/"><i class="fa fa-google "></i></a></li>
+     <li><a class="btn-floating purple" href="https://github.com/MMIL"><i class="fa fa-github"></i></a></li>
+    
+  </ul>
+  </div>
+
+
+
    
 
-   		   $(".imgC1").animate({"left": "+=50px"}, "slow").animate({
-			    width: "10%",
-			    opacity: 0.4,
-			    marginLeft: "0.6in",
-			    fontSize: "3em",
-			    borderWidth: "10px"
-			  
-			  
-			  }, 1500).hide(0);
-		    $(".imgD1").animate({"left": "-=50px"}, "slow").animate({
-			    width: "10%",
-			    opacity: 0.4,
-			    marginRight: "0.6in",
-			    fontSize: "3em",
-			    borderWidth: "10px"
-			  
-			  
-			  }, 1500).hide(0);
-			$(".imgE1").hide(0).delay(3000).fadeIn(10000)
-   	        $(".imgF1").hide(0).delay(3000).fadeIn(10000)
-			$(".imgG1").hide(0).delay(3000).fadeIn(10000)
-			$(".imgH1").hide(0).delay(5000).fadeIn(10000)
-			$(".imgI1").hide(0).delay(5000).fadeIn(10000)
-			$(".imgJ1").fadeOut(5000)  
+  <!--our team-->
+  <div id="team">
+  <div class="parallax-container" id="te"  >
+  <div class="parallax"><img src="images/parallax.png"></div>
+
+  <div  >
+      <h2 class="header center black-text flow-text" ><b>OUR &nbsp;&nbsp; TEAM</b></h2>
+
+      <div class="owl-carousel " >
+              <div class="item "   >
+                <div class="card ca" >
+              <div class="card-image">
+                <img src="images/saurabh.jpg">
+                
+              </div>
+              <div class="card-content center">
+                <ul>
+                  <li><h5>Saurabh Verma</h5></li>
+                  <li><h6><b>[Founder]</b></h6></li>
+
+              </ul>
+              </div>
+              <div class="card-action">
+               <div class="social-media-banner center">
+                  <a href=""><i class="fa fa-twitter small"></i></a>
+                  <a href=""><i class="fa fa-facebook small"></i></a>
+          <a href=""><i class="fa fa-instagram small"></i></a>
+                  <a href=""><i class="fa fa-linkedin small"></i></a>
+              </div>
+              </div>
+            </div>
+
+             </div>
+              <div class="item">
+                <div class="card ca">
+              <div class="card-image">
+                <img src="images/Prince.jpg">
+                
+              </div>
+              <div class="card-content center">
+        <ul>
+                <li><h5>Prince Kumar</h5></li>
+                  <li><h6><b>[Co-Founder]</b></h6></li>
+          </ul>
+              </div>
+              <div class="card-action">
+                <div class="social-media-banner center">
+                  <a href=""><i class="fa fa-twitter small"></i></a>
+                  <a href=""><i class="fa fa-facebook small"></i></a>
+                  <a href=""><i class="fa fa-instagram small"></i></a>
+                  <a href=""><i class="fa fa-linkedin small"></i></a>
+              </div>
+              </div>
+            </div>
+              </div>
+              <div class="item">
+                 <div class="card ca">
+              <div class="card-image">
+                <img src="images/itisri.png">
+                
+              </div>
+              <div class="card-content center">
+                <ul>
+                  <li><h5>Itishri Singh</h5></li>
+                  <li><h6><b>[President]</b></h6></li>
+
+              </ul>
+              </div>
+              <div class="card-action">
+                <div class="social-media-banner center">
+                  <a href=""><i class="fa fa-twitter small"></i></a>
+                  <a href=""><i class="fa fa-facebook small"></i></a>
+                  <a href="https://github.com/itishri123"><i class="fa fa-github small"></i></a>
+                  <a href="https://touch.www.linkedin.com/?sessionid=4816177343758336&voyurl=https%3A%2F%2Fwww.linkedin.com%2Fm%2F%3Fsessionid%3D4816177
+          343758336&rs=false&redirectUrl=%23stream#you"><i class="fa fa-linkedin small"></i></a>
+              </div>
+              </div>
+            </div>
+              </div>
+              <div class="item">
+                 <div class="card ca">
+              <div class="card-image">
+                <img src="images/tewari.jpg">
+                
+              </div>
+              <div class="card-content center">
+                <ul>
+                  <li><h5>Akash Tewari</h5></li>
+                  <li><h6><b>[CTC]</b></h6></li>
+
+              </ul>
+              </div>
+              <div class="card-action">
+               <div class="social-media-banner center">
+                  <a href=""><i class="fa fa-twitter small"></i></a>
+                  <a href=""><i class="fa fa-facebook small"></i></a>
+                  <a href=""><i class="fa fa-instagram small"></i></a>
+                  <a href=""><i class="fa fa-linkedin small"></i></a>
+              </div>
+              </div>
+            </div>
+              </div>
+              <div class="item">
+                 <div class="card ca">
+              <div class="card-image">
+                <img src="images/riddhi.jpg">
+                
+              </div>
+              <div class="card-content center">
+                <ul>
+                  <li><h5>Riddhi Agarwal</h5></li>
+                  <li><h6><b>[CTC]</b></h6></li>
+
+              </ul>
+              </div>
+              <div class="card-action">
+                <div class="social-media-banner center">
+                  <a href=""><i class="fa fa-twitter small"></i></a>
+                  <a href=""><i class="fa fa-facebook small"></i></a>
+                  <a href=""><i class="fa fa-instagram small"></i></a>
+                  <a href=""><i class="fa fa-linkedin small"></i></a>
+              </div>
+              </div>
+            </div>
+              </div>
+              <div class="item">
+                 <div class="card ca">
+              <div class="card-image">
+                <img src="images/mohit.jpg">
+                
+              </div>
+              <div class="card-content center">
+                <ul>
+                  <li><h5>Mohit Chaudhary</h5></li>
+                  <li><h6><b>[General Secretary]</b></h6></li>
+
+              </ul>
+              </div>
+              <div class="card-action">
+                <div class="social-media-banner center">
+                  <a href=""><i class="fa fa-twitter small"></i></a>
+                  <a href=""><i class="fa fa-facebook small"></i></a>
+                  <a href=""><i class="fa fa-instagram small"></i></a>
+                  <a href=""><i class="fa fa-linkedin small"></i></a>
+              </div>
+              </div>
+            </div>
+              </div>
+              <div class="item">
+                 <div class="card ca">
+              <div class="card-image">
+                <img src="images/anubhav.jpg">
+                
+              </div>
+              <div class="card-content center">
+                <ul>
+                  <li><h5>Anubhav Singh</h5></li>
+                  <li><h6><b>[Pragmatic Strategist]</b></h6></li>
+
+              </ul>
+              </div>
+              <div class="card-action">
+                <div class="social-media-banner center">
+                  <a href="https://twitter.com/experienceflas1"><i class="fa fa-twitter small"></i></a>
+                  <a href=""><i class="fa fa-facebook small"></i></a>
+                  <a href="www.github.com/gitexperience"><i class="fa fa-github small"></i></a>
+                  <a href="https://www.linkedin.com/profile/view?id=347472143"><i class="fa fa-linkedin small"></i></a>
+              </div>
+              </div>
+            </div>
+              </div>
+              <div class="item">
+                 <div class="card ca">
+              <div class="card-image">
+                <img src="images/shivbaran.jpg">
+                
+              </div>
+              <div class="card-content center">
+                <ul>
+                  <li><h5>Shiv Baran Singh</h5></li>
+                  <li><h6><b>[Web Programming Head]</b></h6></li>
+
+              </ul>
+              </div>
+              <div class="card-action">
+                <div class="social-media-banner center">
+                  <a href="https://twitter.com/experienceflas1"><i class="fa fa-twitter small"></i></a>
+                  <a href=""><i class="fa fa-facebook small"></i></a>
+                  <a href="www.github.com/gitexperience"><i class="fa fa-github small"></i></a>
+                  <a href="https://www.linkedin.com/profile/view?id=347472143"><i class="fa fa-linkedin small"></i></a>
+              </div>
+              </div>
+            </div>
+              </div>
+              <div class="item">
+                 <div class="card ca">
+              <div class="card-image">
+                <img src="images/arman.png">
+                
+              </div>
+              <div class="card-content center">
+                <ul>
+                  <li><h5>Arman Ahmed</h5></li>
+                  <li><h6><b>[Linux Department]</b></h6></li>
+
+              </ul>
+              </div>
+              <div class="card-action">
+                <div class="social-media-banner center">
+                  <a href=""><i class="fa fa-twitter small"></i></a>
+                  <a href=""><i class="fa fa-facebook small"></i></a>
+                  <a href=""><i class="fa fa-instagram small"></i></a>
+                  <a href=""><i class="fa fa-linkedin small"></i></a>
+              </div>
+              </div>
+            </div>
+              </div>
+              <div class="item">
+                 <div class="card ca">
+              <div class="card-image">
+                <img src="images/aakash.jpg">
+                
+              </div>
+              <div class="card-content center">
+                <ul>
+                  <li><h5>Akash Chandoke</h5></li>
+                  <li><h6><b>[DB]</b></h6></li>
+
+              </ul>
+              </div>
+              <div class="card-action">
+                <div class="social-media-banner center">
+                  <a href=""><i class="fa fa-twitter small"></i></a>
+                  <a href=""><i class="fa fa-facebook small"></i></a>
+                  <a href=""><i class="fa fa-instagram small"></i></a>
+                  <a href=""><i class="fa fa-linkedin small"></i></a>
+              </div>
+              </div>
+            </div>
+              </div>
+              <div class="item">
+                 <div class="card ca">
+              <div class="card-image">
+                <img src="images/Vini.jpg">
+                
+              </div>
+              <div class="card-content center">
+                <ul>
+                  <li><h5>Vini Maheshwari</h5></li>
+                  <li><h6><b>[Developer]</b></h6></li>
+
+              </ul>
+              </div>
+              <div class="card-action">
+                <div class="social-media-banner center">
+                  <a href="https://twitter.com/MaheshwariVini"><i class="fa fa-twitter small"></i></a>
+                  <a href="https://github.com/vinimaheshwari02"><i class="fa fa-github small"></i></a>
+                  <a href=""><i class="fa fa-instagram small"></i></a>
+                  <a href="https://www.linkedin.com/profile/view?id=AAIAABuKo-YBq6YbiMYv1P0_CUjLm_Z8Q7WlbvM&trk=nav_responsive_tab_profilehttps://twitter.com/MaheshwariVini"><i class="fa fa-linkedin small"></i></a>
+              </div>
+              </div>
+            </div>
+              </div>
+              <div class="item">
+                 <div class="card ca">
+              <div class="card-image">
+                <img src="images/anant.jpg">
+                
+              </div>
+              <div class="card-content center">
+                <ul>
+                  <li><h5>Anant Kumar Singh</h5></li>
+                  <li><h6><b>[Developer]</b></h6></li>
+
+              </ul>
+              </div>
+              <div class="card-action">
+                <div class="social-media-bannercenter">
+                  <a href="https://twitter.com/anantsingh1010"><i class="fa fa-twitter small"></i></a>
+                  <a href="https://github.com/anant-dev"><i class="fa fa-facebook small"></i></a>
+                  <a href=""><i class="fa fa-github small"></i></a>
+                  <a href="https://in.linkedin.com/in/anant-singh-b25892b0"><i class="fa fa-linkedin small"></i></a>
+              </div>
+              </div>
+            </div>
+              </div>
+        <div class="item">
+                 <div class="card ca">
+              <div class="card-image">
+                <img src="images/nikhilbhagat.jpg">
+                
+              </div>
+              <div class="card-content center">
+                <ul>
+                  <li><h5>Nikhil Bhagat</h5></li>
+                  <li><h6><b>[Developer]</b></h6></li>
+
+              </ul>
+              </div>
+              <div class="card-action">
+               <div class="social-media-banner center ">
+                  <a href=""><i class="fa fa-twitter small"></i></a>
+                  <a href=""><i class="fa fa-facebook small"></i></a>
+                  <a href=""><i class="fa fa-instagram small"></i></a>
+                  <a href=""><i class="fa fa-linkedin small"></i></a>
+              </div> 
+              </div>
+            </div>
+              </div>
+        <div class="item">
+                 <div class="card ca">
+              <div class="card-image">
+                <img src="images/Vibhuti.jpg">
+                
+              </div>
+              <div class="card-content center">
+                 <ul>
+                  <li><h5>Vibhuti Shukla</h5></li>
+                  <li><h6><b>[Developer]</b></h6></li>
+
+              </ul>
+              </div>
+              <div class="card-action">
+                <div class="social-media-banner center">
+                  <a href=""><i class="fa fa-twitter small"></i></a>
+                  <a href=""><i class="fa fa-facebook small"></i></a>
+                  <a href=""><i class="fa fa-instagram small"></i></a>
+                  <a href=""><i class="fa fa-linkedin small"></i></a>
+              </div>
+              </div>
+            </div>
+              </div>
+        <div class="item">
+                 <div class="card ca">
+              <div class="card-image">
+                <img src="images/sakshi.jpg">
+                
+              </div>
+              <div class="card-content center">
+                <ul>
+                  <li><h5>Sakshi Tripathi</h5></li>
+                  <li><h6><b>[Developer]</b></h6></li>
+
+              </ul>
+              </div>
+              <div class="card-action">
+                <div class="social-media-banner center">
+                  <a href=""><i class="fa fa-twitter small"></i></a>
+                  <a href=""><i class="fa fa-facebook small"></i></a>
+                  <a href="https://github.com/sakshi29"><i class="fa fa-github small"></i></a>
+                  <a href="https://in.linkedin.com/in/sakshi-tripathi-953234102"><i class="fa fa-linkedin small"></i></a>
+              </div>
+              </div>
+            </div>
+              </div>
+        <div class="item">
+                 <div class="card ca">
+              <div class="card-image">
+                <img src="images/sumit.jpg">
+                
+              </div>
+              <div class="card-content center">
+                <ul>
+                  <li><h5>Sumit Pandir</h5></li>
+                  <li><h6><b>[Developer]</b></h6></li>
+
+              </ul>
+              </div>
+              <div class="card-action">
+                <div class="social-media-banner center">
+                  <a href=""><i class="fa fa-twitter small"></i></a>
+                  <a href=""><i class="fa fa-facebook small"></i></a>
+                  <a href=""><i class="fa fa-instagram small"></i></a>
+                  <a href=""><i class="fa fa-linkedin small"></i></a>
+              </div>
+              </div>
+            </div>
+              </div>
+        <div class="item">
+                 <div class="card ca">
+              <div class="card-image">
+                <img src="images/Kanishk.jpg">
+                
+              </div>
+              <div class="card-content center">
+                <ul>
+                  <li><h5>Kanishk Sharma</h5></li>
+                  <li><h6><b>[Developer]</b></h6></li>
+
+              </ul>
+              </div>
+              <div class="card-action">
+                <div class="social-media-banner center">
+                  <a href="https://twitter.com/Kani3012?lang=en-in"><i class="fa fa-twitter small"></i></a>
+                  <a href=""><i class="fa fa-facebook small"></i></a>
+                  <a href="https://github.com/kani3012"><i class="fa fa-github small"></i></a>
+                  <a href="https://in.linkedin.com/in/kanishk-sharma-79354410a"><i class="fa fa-linkedin small"></i></a>
+              </div>
+              </div>
+            </div>
+              </div>
+        <div class="item">
+                 <div class="card ca">
+              <div class="card-image">
+                <img src="images/ayushi.jpg">
+                
+              </div>
+              <div class="card-content center">
+                <ul>
+                  <li><h5>Ayushi Rathore</h5></li>
+                  <li><h6><b>[Developer]</b></h6></li>
+
+              </ul>
+              
+              </div>
+              <div class="card-action">
+                <div class="social-media-banner center">
+                  <a href=""><i class="fa fa-twitter small"></i></a>
+                  <a href=""><i class="fa fa-facebook small"></i></a>
+                  <a href="https://github.com/AyushiRathore"><i class="fa fa-github small"></i></a>
+                  <a href="https://in.linkedin.com/in/ayushi-rathore-23876856"><i class="fa fa-linkedin small"></i></a>
+              </div>
+              </div>
+            </div>
+              </div>
+        <div class="item">
+                 <div class="card ca">
+              <div class="card-image">
+                <img src="images/Deepti.jpg">
+                
+              </div>
+              <div class="card-content center">
+                <ul>
+                  <li><h5>Deepti Jain</h5></li>
+                  <li><h6><b>[Developer]</b></h6></li>
+
+              </ul>
+              </div>
+              <div class="card-action">
+                <div class="social-media-banner center">
+                  <a href=""><i class="fa fa-twitter small"></i></a>
+                  <a href=""><i class="fa fa-facebook small"></i></a>
+                  <a href="https://github.com/deepti1996"><i class="fa fa-github small"></i></a>
+                  <a href="https://in.linkedin.com/in/deeptijain9676"><i class="fa fa-linkedin small"></i></a>
+              </div>
+              </div>
+            </div>
+              </div>
+        <div class="item">
+                 <div class="card ca">
+              <div class="card-image">
+                <img src="images/divyanshu.jpg">
+                
+              </div>
+              <div class="card-content center" >
+                <ul>
+                  <li><h5>Divyanshu Verma</h5></li>
+                  <li><h6><b>[Developer]</b></h6></li>
+
+              </ul>
+              </div>
+              <div class="card-action">
+                <div class="social-media-banner center">
+                  <a href=""><i class="fa fa-twitter small"></i></a>
+                  <a href=""><i class="fa fa-facebook small"></i></a>
+                  <a href=""><i class="fa fa-instagram small"></i></a>
+                  <a href=""><i class="fa fa-linkedin small"></i></a>
+              </div>
+              </div>
+            </div>
+              </div>
+        <div class="item">
+                 <div class="card ca">
+              <div class="card-image">
+                <img src="images/tarun.jpg">
+                
+              </div>
+              <div class="card-content center">
+                <ul>
+                  <li><h5>Tarun Garg</h5></li>
+                  <li><h6><b>[Developer]</b></h6></li>
+
+              </ul>
+              </div>
+              <div class="card-action">
+                <div class="social-media-banner center">
+                  <a href=""><i class="fa fa-twitter small"></i></a>
+                  <a href=""><i class="fa fa-facebook small"></i></a>
+                  <a href=""><i class="fa fa-instagram small"></i></a>
+                  <a href=""><i class="fa fa-linkedin small"></i></a>
+              </div>
+              </div>
+            </div>
+              </div>
+        <div class="item">
+                 <div class="card ca">
+              <div class="card-image">
+                <img src="images/akshay.jpg">
+                
+              </div>
+              <div class="card-content center">
+                <ul>
+                  <li><h5>Akshay Vashishth</h5></li>
+                  <li><h6><b>[Developer]</b></h6></li>
+
+              </ul>
+              </div>
+              <div class="card-action">
+                 <div class="social-media-banner center">
+                  <a href="https://twitter.com/VashisthaAkshay"><i class="fa fa-twitter small"></i></a>
+                  <a href=""><i class="fa fa-facebook small"></i></a>
+                  <a href="https://github.com/ajatgd"><i class="fa fa-github small"></i></a>
+                  <a href="https://www.linkedin.com/in/akshay-vashistha-9a558778"><i class="fa fa-linkedin small"></i></a>
+              </div>
+              </div>
+            </div>
+              </div>
+
+              <div class="item">
+                 <div class="card ca">
+              <div class="card-image">
+                <img src="images/rishabh.png">
+                
+              </div>
+              <div class="card-content center">
+                <ul>
+                  <li><h5>Rishabh Singh Chauhan</h5></li>
+                  <li><h6><b>[Developer]</b></h6></li>
+
+              </ul>
+              </div>
+              <div class="card-action">
+                 <div class="social-media-banner center">
+                  <a href="https://twitter.com/VashisthaAkshay"><i class="fa fa-twitter small"></i></a>
+                  <a href=""><i class="fa fa-facebook small"></i></a>
+                  <a href="https://github.com/ajatgd"><i class="fa fa-github small"></i></a>
+                  <a href="https://www.linkedin.com/in/akshay-vashistha-9a558778"><i class="fa fa-linkedin small"></i></a>
+              </div>
+              </div>
+            </div>
+              </div>
+
+              <div class="item">
+                 <div class="card ca">
+              <div class="card-image">
+                <img src="images/kp.jpg">
+                
+              </div>
+              <div class="card-content center">
+                <ul>
+                  <li><h5>KP Kushal</h5></li>
+                  <li><h6><b>[Developer]</b></h6></li>
+
+              </ul>
+              </div>
+              <div class="card-action">
+                 <div class="social-media-banner center">
+                  <a href="https://twitter.com/VashisthaAkshay"><i class="fa fa-twitter small"></i></a>
+                  <a href=""><i class="fa fa-facebook small"></i></a>
+                  <a href="https://github.com/ajatgd"><i class="fa fa-github small"></i></a>
+                  <a href="https://www.linkedin.com/in/akshay-vashistha-9a558778"><i class="fa fa-linkedin small"></i></a>
+              </div>
+              </div>
+            </div>
+              </div>
+
+              <div class="item">
+                 <div class="card ca">
+              <div class="card-image">
+                <img src="images/shivanika.jpg">
+                
+              </div>
+              <div class="card-content center">
+                <ul>
+                  <li><h5>Shivanika Shah</h5></li>
+                  <li><h6><b>[Developer]</b></h6></li>
+
+              </ul>
+              </div>
+              <div class="card-action">
+                 <div class="social-media-banner center">
+                  <a href="https://twitter.com/VashisthaAkshay"><i class="fa fa-twitter small"></i></a>
+                  <a href=""><i class="fa fa-facebook small"></i></a>
+                  <a href="https://github.com/ajatgd"><i class="fa fa-github small"></i></a>
+                  <a href="https://www.linkedin.com/in/akshay-vashistha-9a558778"><i class="fa fa-linkedin small"></i></a>
+              </div>
+              </div>
+            </div>
+              </div>
+
+              <div class="item">
+                 <div class="card ca">
+              <div class="card-image">
+                <img src="images/shivangi.jpg">
+                
+              </div>
+              <div class="card-content center">
+                <ul>
+                  <li><h5>Shivangi Garg</h5></li>
+                  <li><h6><b>[Developer]</b></h6></li>
+
+              </ul>
+              </div>
+              <div class="card-action">
+                 <div class="social-media-banner center">
+                  <a href="https://twitter.com/VashisthaAkshay"><i class="fa fa-twitter small"></i></a>
+                  <a href=""><i class="fa fa-facebook small"></i></a>
+                  <a href="https://github.com/ajatgd"><i class="fa fa-github small"></i></a>
+                  <a href="https://www.linkedin.com/in/akshay-vashistha-9a558778"><i class="fa fa-linkedin small"></i></a>
+              </div>
+              </div>
+            </div>
+              </div>
+
+              <div class="item">
+                 <div class="card ca">
+              <div class="card-image">
+                <img src="images/arti.jpg">
+                
+              </div>
+              <div class="card-content center">
+                <ul>
+                  <li><h5>Arti Gupta</h5></li>
+                  <li><h6><b>[Developer]</b></h6></li>
+
+              </ul>
+              </div>
+              <div class="card-action">
+                 <div class="social-media-banner center">
+                  <a href="https://twitter.com/VashisthaAkshay"><i class="fa fa-twitter small"></i></a>
+                  <a href=""><i class="fa fa-facebook small"></i></a>
+                  <a href="https://github.com/ajatgd"><i class="fa fa-github small"></i></a>
+                  <a href="https://www.linkedin.com/in/akshay-vashistha-9a558778"><i class="fa fa-linkedin small"></i></a>
+              </div>
+              </div>
+            </div>
+              </div>
+        
+            </div>
+  </div>
+  </div>
+      
+  </div>
 
 
-});
-</script>
+  <footer id="contact" class="light-blue darken-2 scrollspy" style="font-size:15px">
+  <div class="container">  
+      <div class="row">
+          <div class="col s12">
+              <form class="col s12" action="contact.php" method="post">
+                  <div class="row">
+                      <div class="input-field col s6">
+                          <i class="material-icons prefix white-text">person_pin</i>
+                          <input id="icon_prefix" name="name" type="text" class="validate white-text">
+                          <label for="icon_prefix" class="white-text">First Name</label>
+                      </div>
+                      <div class="input-field col s6">
+                          <i class="material-icons prefix white-text">message</i>
+                          <textarea id="icon_prefix2" name="message" class="materialize-textarea white-text"></textarea>
+                          <label for="icon_prefix2" class="white-text">Message</label>
+                      </div>
+                       
+                      <div class="input-field col s6">
+                          <i class="material-icons prefix white-text">email</i>
+                          <input id="icon_email" name="email" type="email" class="validate white-text">
+                          <label for="icon_email" class="white-text">Email-id</label>
+                      </div>
+                      <div class="col s6 center sub">
+                          <button class="btn waves-effect waves-light light blue darken-4 z-depth-5" type="submit">Submit
+                              <i class="material-icons right white-text">send</i>
+                          </button>
+                      </div>
+                  </div>
+              </form>
+          </div>
+           
+  </div>
+  <div class="footer-copyright light-blue darken-2 foot" style="font-size:15px">
+      <div class="container center">
+          Made by <a class="indigo-text text-darken-4" href="index.html" style="margin-left:0.5em">Microsoft Mobile Innovation Lab.</a> 
+          </div>
+  </div>
+  </footer>
 
 
-<script>
-  $(document).ready(function() {
-  $('.owl-carousel').owlCarousel({
-    loop:true,
-  dots: true,
-  autoplay:true,
-  autoplayTimeout:3000,
-  
-    margin:10,
-    responsiveClass:true,
-    responsive:{
-        0:{
-            items:1,
-            nav:true
-        },
-        600:{
-            items:2,
-            nav:false
-        },
-        1000:{
-            items:4,
-            nav:true,
-            loop:false
-        }
+
+
+
+
+
+  <!--Import jQuery before materialize.js-->
+         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+         <script src="js/owl.carousel.js"></script>
+
+
+
+  <script type="text/javascript">
     
-    }
-});
+     $(document).ready(function(){
+        $(".button-collapse").sideNav(); 
+        $('.parallax').parallax();
+      });
+  </script>
+   <script>
+        $(document).ready(function(){
+     
 
-});
+     		   $(".imgC1").animate({"left": "+=50px"}, "slow").animate({
+  			    width: "10%",
+  			    opacity: 0.4,
+  			    marginLeft: "0.6in",
+  			    fontSize: "3em",
+  			    borderWidth: "10px"
+  			  
+  			  
+  			  }, 1500).hide(0);
+  		    $(".imgD1").animate({"left": "-=50px"}, "slow").animate({
+  			    width: "10%",
+  			    opacity: 0.4,
+  			    marginRight: "0.6in",
+  			    fontSize: "3em",
+  			    borderWidth: "10px"
+  			  
+  			  
+  			  }, 1500).hide(0);
+  			$(".imgE1").hide(0).delay(3000).fadeIn(10000)
+     	        $(".imgF1").hide(0).delay(3000).fadeIn(10000)
+  			$(".imgG1").hide(0).delay(3000).fadeIn(10000)
+  			$(".imgH1").hide(0).delay(5000).fadeIn(10000)
+  			$(".imgI1").hide(0).delay(5000).fadeIn(10000)
+  			$(".imgJ1").fadeOut(5000)  
+
+
+  });
+  </script>
+
+
+  <script>
+    $(document).ready(function() {
+    $('.owl-carousel').owlCarousel({
+      loop:true,
+    dots: true,
+    autoplay:true,
+    autoplayTimeout:3000,
+    
+      margin:10,
+      responsiveClass:true,
+      responsive:{
+          0:{
+              items:1,
+              nav:true
+          },
+          600:{
+              items:2,
+              nav:false
+          },
+          1000:{
+              items:4,
+              nav:true,
+              loop:false
+          }
+      
+      }
+  });
+
+  });
 
 
 
-</script>
+  </script>
 
 
-<!--  Scripts-->
- 
- 
-</body>
-</html>
+  <!--  Scripts-->
+   
+   
+  </body>
+  </html>
