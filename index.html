@@ -183,6 +183,41 @@ body{
  .owl-carousel{
   width:auto;
  }
+@import url(http://fonts.googleapis.com/css?family=Istok+Web);
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+body, figure { 
+  margin: 0; background: #101010;
+  font-family: Istok Web, sans-serif;
+  font-weight: 100;
+}
+div#captioned-gallery { 
+  width: 95%; overflow: hidden; 
+}
+figure.slider { 
+  position: relative; width: 500%;
+  font-size: 0; animation: 20s slidy infinite; 
+}
+figure.slider figure { 
+  width: 20%; height: auto;
+  display: inline-block;  position: inherit; 
+}
+figure.slider img { width: 100%; height: auto; }
+figure.slider figure figcaption { 
+  position: absolute; bottom: 0;
+  background: rgba(0,0,0,0.4);
+  color: #fff; width: 100%;
+  font-size: 2rem; padding: .6rem; 
+}
 
 </style>
 
@@ -291,19 +326,35 @@ body{
 </div>
 </div>
 
-
-
 <!-- current event on the laptop-->
 <div id="events" style="background:#D9D9D9">
 <h2 class="header center black-text flow-text" ><b>CURRENT EVENTS</b></h2>
 <div class=" container laptop " style="margin-top: 1cm;" >
   <div class="upper">
-      <img class="current" src="images/zeal1.jpg">
-  </div>
+
+ <div id="captioned-gallery" class="current">
+  <figure class="slider">
+    <figure>
+      <img src="images/flex.jpg">
+    </figure>
+    <figure>
+      <img src="images/code1.jpg">
+    </figure>
+    <figure>
+      <img src="images/tech3.jpg">
+    </figure>
+    <figure>
+      <img src="images/ring1.jpg">
+    </figure>
+    <figure>
+      <img src="images/quiz1.jpg">
+    </figure>
+  </figure>
+</div>
+</div>
   <div class="lower"></div>
 </div>       
 </div>
-
 
 
 <!-- events-->
