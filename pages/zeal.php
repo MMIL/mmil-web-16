@@ -104,7 +104,7 @@ body {
                 </div>
                 <div class="card-reveal center" id="rev">
                     <span class="card-title grey-text text-darken-4">Code-Ageddon<i class="mdi-navigation-close right"></i></span>
-                    <p>Conducted JSS Hackathon 2k15 conducted at JSSATE Noida funded by Microsoft</p>
+                    <p>First know the language then solve the problems.</p>
 
                 </div>
             </div>
@@ -120,7 +120,7 @@ body {
                 </div>
                 <div class="card-reveal center"  id="rev">
                     <span class="card-title grey-text text-darken-4">Technovision'16<i class="mdi-navigation-close right"></i></span>
-                    <p> Conducted Casopian Wars - An evevt in which student present there Apps for various platformsconducted at Zealicon 2015</p></div>
+                    <p> Make the app and win hackathon.</p></div>
             </div>
         </div>
 
@@ -133,8 +133,8 @@ body {
                     <span class="card-title activator grey-text text-darken-4">Compequizicon</span>
                 </div>
                 <div class="card-reveal center"  id="rev">
-                    <span class="card-title grey-text text-darken-4">Compequizicon, Zealicon 2015 <i class="mdi-navigation-close right"></i></span>
-                    <p >Organised Compequizicon - A technical IT-quiz event with hurdels and level conducted at Zealicon 2015</p> </div>
+                    <span class="card-title grey-text text-darken-4">Compequizicon<i class="mdi-navigation-close right"></i></span>
+                    <p >If you think you are a technofreak..then come here.</p> </div>
             </div>
         </div>
 
@@ -148,7 +148,7 @@ body {
                 </div>
                 <div class="card-reveal center"  id="rev">
                     <span class="card-title grey-text text-darken-4"> Ring Ring<i class="mdi-navigation-close right"></i> </span>
-                    <p>A Workshop on Android App Development </p>
+                    <p>Have guts to answer rapid questions..then pick up the phone. </p>
                 </div>
             </div>
         </div>
