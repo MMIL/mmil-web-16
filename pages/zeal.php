@@ -57,7 +57,7 @@ body {
             <ul class="right hide-on-med-and-down">
                 <li><a href="aboutus.html">About Us</a></li>
                 <li><a href="#">Zealicon'16</a></li>
-                <li><a href="../index.html#events">Events</a></li>
+                <li><a href="events.html">Events</a></li>
                 <li><a href="../index.html#cont">Contributions</a></li>
                 <li><a href="../index.html#contact">Contact Us</a></li>
                  
@@ -65,7 +65,7 @@ body {
             <ul class="side-nav" id="nav-mobile">
                 <li><a href="aboutus.html">About Us</a></li>
                 <li><a href="#">Zealicon'16</a></li>
-                <li><a href="../index.html#events">Events</a></li>
+                <li><a href="events.html">Events</a></li>
                 <li><a href="../index.html#cont">Contributions</a></li>
                 <li><a href="../index.html#contact">Contact Us</a></li>
                 
@@ -284,7 +284,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
 
 
 <footer id="contact" class="page-footer light-blue darken-2 scrollspy">
-    <div class="container center" style="font-size:15px">
+    <div class="container center" style="font-size:20px">
         Made by <a class="indigo-text text-darken-4" href="../index.html" style="margin-left:0.5em">Microsoft Mobile Innovation Lab.</a>
     </div>
 </div>
