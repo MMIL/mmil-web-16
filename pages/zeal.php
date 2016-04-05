@@ -56,7 +56,6 @@ body {
         
             <ul class="right hide-on-med-and-down">
                 <li><a href="aboutus.html">About Us</a></li>
-                <li><a href="../index.html#team">Team</a></li>
                 <li><a href="#">Zealicon'16</a></li>
                 <li><a href="../index.html#events">Events</a></li>
                 <li><a href="../index.html#cont">Contributions</a></li>
@@ -65,7 +64,6 @@ body {
             </ul>
             <ul class="side-nav" id="nav-mobile">
                 <li><a href="aboutus.html">About Us</a></li>
-                <li><a href="../index.html#team">Team</a></li>
                 <li><a href="#">Zealicon'16</a></li>
                 <li><a href="../index.html#events">Events</a></li>
                 <li><a href="../index.html#cont">Contributions</a></li>
