@@ -36,6 +36,13 @@
   .imgF1 { position:absolute; top: 1%; left: 40%; z-index: 3;width:7%;margin-top:10%; }
   .imgJ1 { position:absolute; top: 1%; left: 50%; z-index: 3;width:7%;margin-top:7%; }
 
+
+    @media (max-width: 600px) {
+      .nav-wrapper .brand-logo img {
+        height: 56px;
+        width: 56px;
+      }
+    }
    
    body {
       display: flex;
@@ -128,7 +135,7 @@
   .c{
     position: relative;
     margin: 0.5rem 0 1rem 0;
-    border-radius: 2em;
+    -webkit-border-radius: 20px;
     width:98%;
    background-color:  #0d47a1;
   }
@@ -258,10 +265,10 @@ div#slider figure {
 
   <!--Navigation-->
   <div class="navbar-fixed">
-  <nav class="light-blue darken-2" style="height: 70px" >
+  <nav class="light-blue darken-2"   >
       <div class="container" >
           <div class="nav-wrapper">
-          <a href="index.html" class="brand-logo"><img src="images/logo1.png"></a>
+          <a href="index.html" class="brand-logo"><img src="images/aa.png"></a>
           
               <ul class="right hide-on-med-and-down" >
                   <li><a href="pages/aboutus.html">About Us</a></li>
