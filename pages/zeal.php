@@ -41,6 +41,9 @@ body {
   font-size: 20px;
 }
  
+.bg{
+        background-color: rgba(51, 51, 51, 0.64) !important;
+  }
 </style>
 
 
@@ -49,7 +52,7 @@ body {
 
 <!--Navigation-->
 <div class="navbar-fixed">
-<nav class="light-blue darken-2" style="height: 70px">
+<nav class="bg">
     <div class="container">
         <div class="nav-wrapper">
         <a href="../index.html" class="brand-logo"><img src="../images/logo1.png"></a>
@@ -57,7 +60,7 @@ body {
             <ul class="right hide-on-med-and-down">
                 <li><a href="aboutus.html">About Us</a></li>
                 <li><a href="#">Zealicon'16</a></li>
-                <li><a href="../index.html#events">Events</a></li>
+                <li><a href="events.html">Events</a></li>
                 <li><a href="../index.html#cont">Contributions</a></li>
                 <li><a href="../index.html#contact">Contact Us</a></li>
                  
@@ -65,7 +68,7 @@ body {
             <ul class="side-nav" id="nav-mobile">
                 <li><a href="aboutus.html">About Us</a></li>
                 <li><a href="#">Zealicon'16</a></li>
-                <li><a href="../index.html#events">Events</a></li>
+                <li><a href="events.html">Events</a></li>
                 <li><a href="../index.html#cont">Contributions</a></li>
                 <li><a href="../index.html#contact">Contact Us</a></li>
                 
@@ -170,7 +173,7 @@ body {
   <!-- Floating Share Button -->
 
 <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
-<a class="btn-floating btn-large light-blue darken-2">
+<a class="btn-floating btn-large bg">
   <i class="fa fa-rocket"> </i>
 </a>
 <ul>
@@ -283,12 +286,20 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
      </div>
 
 
-<footer id="contact" class="page-footer light-blue darken-2 scrollspy">
-    <div class="container center" style="font-size:15px">
-        Made by <a class="indigo-text text-darken-4" href="../index.html" style="margin-left:0.5em">Microsoft Mobile Innovation Lab.</a>
-    </div>
-</div>
-</footer>
+<footer id="contact" class="bg scrollspy" style="font-size:20px">
+  <div class="container center">  
+
+     <a class="white-text" href="https://www.facebook.com/groups/JSSNokia/"><i class="fa fa-facebook "></i></a>&nbsp;&nbsp;
+     <a class="white-text" href="https://twitter.com/ "><i class="fa fa-twitter "></i></a>&nbsp;&nbsp;
+     <a class="white-text" href="https://plus.google.com/"><i class="fa fa-google "></i></a>&nbsp;&nbsp;
+     <a class="white-text" href="https://github.com/MMIL"><i class="fa fa-github"></i></a>
+       
+  <div class="footer-copyright   foot" style="font-size:20px">
+      <div class="container center">
+          Made by <a class="white-text" href="index.html" style="margin-left:0.5em">Microsoft Mobile Innovation Lab.</a> 
+          </div>
+  </div>
+  </footer>
 
 
 
