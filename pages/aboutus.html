@@ -33,6 +33,9 @@ body {
   main {
     flex: 1 0 auto;
   }
+  .bg{
+        background-color: rgba(51, 51, 51, 0.64) !important;
+  }
 
 </style>
 
@@ -54,7 +57,7 @@ body {
 
 <!--Navigation-->
 <div class="navbar-fixed">
-<nav class="light-blue darken-2">
+<nav class="bg">
     <div class="container" >
         <div class="nav-wrapper">
         <a href="../index.html" class="brand-logo"><img src="../images/logo1.png"></a>
@@ -100,6 +103,7 @@ body {
         </div>
       <!-- -->
       </div>
+      <div style="background:#F2F2F2">
       <center><h5 style="font-weight: bolder; font-size: 40px">TEAM</h5></center>
       <center>
         <div class="container row">
@@ -656,54 +660,32 @@ body {
   </div>
 </div>
 </center>
+</div>
 
 
 
 <!--footer-->
-<footer id="contact" class="light-blue darken-2 scrollspy" style="font-size:15px">
-<div class="container">  
-    <div class="row">
-        <div class="col s12">
-            <form class="col s12" action="contact.php" method="post">
-                <div class="row">
-                    <div class="input-field col s6">
-                        <i class="material-icons prefix white-text">person_pin</i>
-                        <input id="icon_prefix" name="name" type="text" class="validate white-text">
-                        <label for="icon_prefix" class="white-text">First Name</label>
-                    </div>
-                    <div class="input-field col s6">
-                        <i class="material-icons prefix white-text">message</i>
-                        <textarea id="icon_prefix2" name="message" class="materialize-textarea white-text"></textarea>
-                        <label for="icon_prefix2" class="white-text">Message</label>
-                    </div>
-                     
-                    <div class="input-field col s6">
-                        <i class="material-icons prefix white-text">email</i>
-                        <input id="icon_email" name="email" type="email" class="validate white-text">
-                        <label for="icon_email" class="white-text">Email-id</label>
-                    </div>
-                    <div class="col s6 center sub">
-                        <button class="btn waves-effect waves-light indigo darken-4 z-depth-5" type="submit">Submit
-                            <i class="material-icons right white-text">send</i>
-                        </button>
-                    </div>
-                </div>
-            </form>
-        </div>
-         
-</div>
-<div class="footer-copyright light-blue darken-2 foot" style="font-size:20px">
-    <div class="container center">
-        Made by <a class="indigo-text text-darken-4" href="../index.html" style="margin-left:0.5em">Microsoft Mobile Innovation Lab.</a>
-    </div>
-</div>
-</footer>
+ <footer id="contact" class="bg scrollspy" style="font-size:20px">
+  <div class="container center">  
+
+     <a class="white-text" href="https://www.facebook.com/groups/JSSNokia/"><i class="fa fa-facebook "></i></a>&nbsp;&nbsp;
+     <a class="white-text" href="https://twitter.com/ "><i class="fa fa-twitter "></i></a>&nbsp;&nbsp;
+     <a class="white-text" href="https://plus.google.com/"><i class="fa fa-google "></i></a>&nbsp;&nbsp;
+     <a class="white-text" href="https://github.com/MMIL"><i class="fa fa-github"></i></a>
+       
+  <div class="footer-copyright   foot" style="font-size:20px">
+      <div class="container center">
+          Made by <a class="white-text" href="index.html" style="margin-left:0.5em">Microsoft Mobile Innovation Lab.</a> 
+          </div>
+  </div>
+  </footer>
+
 
 
  <!-- Floating Share Button -->
 
 <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
-<a class="btn-floating btn-large light-blue darken-2">
+<a class="btn-floating btn-large bg">
   <i class="fa fa-rocket"> </i>
 </a>
 <ul>
