@@ -227,7 +227,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
                <div class="row">
                                                                                 <!--name-->
                     <div class="input-field col s6">
-                         <input name="name" id="name" type="text" class="validate" pattern="[a-zA-Z][a-zA-Z ]{4,}" title="Please use letters only" required>
+                         <input name="name" id="name" type="text" class="validate" pattern="[a-zA-Z][a-zA-Z ]{1,}" title="Please use letters only with some real name"  required>
                          <label for="name">Name</label>
                     </div>
                                                                                  <!--mobile number-->
@@ -316,14 +316,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
           $('.modal-trigger').leanModal();
           
        });
-     </script>
-
-  
-
-   
-
-
- 
- 
+     </script> 
 </body>
 </html>
