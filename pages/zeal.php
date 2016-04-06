@@ -62,7 +62,7 @@ body {
                 <li><a href="#">Zealicon'16</a></li>
                 <li><a href="events.html">Events</a></li>
                 <li><a href="../index.html#cont">Contributions</a></li>
-                <li><a href="../index.html#contact">Contact Us</a></li>
+                <li><a class="modal-trigger" href="#modal1">Contact Us</a></li>
                  
             </ul>
             <ul class="side-nav" id="nav-mobile">
@@ -83,6 +83,39 @@ body {
 
 
 
+<div id="modal1" class="modal bottom-sheet overflow" style="background:#474747">
+  <div class="modal-content ">
+      <div class="row modal-content">
+          <div class="col s12">
+              <form class="col s12" action="mailscript/mail.php" method="post">
+                  <div class="row">
+                      <div class="input-field col s6">
+                          <i class="material-icons prefix white-text">person_pin</i>
+                          <input id="icon_prefix" name="name" type="text" class="validate white-text">
+                          <label for="icon_prefix" class="white-text">First Name</label>
+                      </div>
+                      <div class="input-field col s6">
+                          <i class="material-icons prefix white-text">message</i>
+                          <textarea id="icon_prefix2" name="message" class="materialize-textarea white-text"></textarea>
+                          <label for="icon_prefix2" class="white-text">Message</label>
+                      </div>
+                      <div class="input-field col s6">
+                          <i class="material-icons prefix white-text">email</i>
+                          <input id="icon_email" name="email" type="email" class="validate white-text">
+                          <label for="icon_email" class="white-text">Email-id</label>
+                      </div>
+                        <div class="col s6 center sub">
+                          <button class="btn waves-effect waves-light light blue darken-4 z-depth-5" type="submit">Submit
+                              <i class="material-icons right white-text">send</i>
+                          </button>
+                      </div>
+            </div>
+
+              </form>
+          </div>
+  </div>
+  </div>
+  </div>
 
 
 
@@ -172,18 +205,7 @@ body {
 
   <!-- Floating Share Button -->
 
-<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
-<a class="btn-floating btn-large bg">
-  <i class="fa fa-rocket"> </i>
-</a>
-<ul>
-   <li><a class="btn-floating deep-purple darken-4" href="https://www.facebook.com/groups/JSSNokia/"><i class="fa fa-facebook "></i></a></li>
-   <li><a class="btn-floating blue" href="https://twitter.com/ "><i class="fa fa-twitter "></i></a></li>
-   <li><a class="btn-floating red" href="https://plus.google.com/"><i class="fa fa-google "></i></a></li>
-   <li><a class="btn-floating purple" href="https://github.com/MMIL"><i class="fa fa-github"></i></a></li>
-  
-</ul>
-</div>
+ 
 
 
 <?php
@@ -200,6 +222,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
           $mobile_number = trim(strip_tags($_POST['mobile_number']));
           $year = $_POST['year'];
           $branch = $_POST['branch'];
+          $zealid = $_POST['zeal-id'];
           foreach ($_POST['events'] as $selectedOption)
             $events[$selectedOption]=$selectedOption;   
            
@@ -212,7 +235,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
 
      if (!$problem)
      {
-      $data=$name.'     '.$mobile_number.'     '.$year.'    '.$branch;
+      $data=$name.'     '.$mobile_number.'     '.$year.'    '.$branch.'    '.$zealid;
       foreach ($events as $selectedOption)
         file_put_contents($selectedOption.' Registration List.txt',$data . PHP_EOL, FILE_APPEND);
 
@@ -226,12 +249,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
           <form class="col s12" method="post" action="">
                <div class="row">
                                                                                 <!--name-->
-                    <div class="input-field col s6">
-                         <input name="name" id="name" type="text" class="validate" pattern="[a-zA-Z][a-zA-Z ]{1,}" title="Please use letters only with some real name"  required>
+                    <div class="input-field col s6 black-text">
+                         <input name="name" id="name" type="text" class="validate" pattern="[a-zA-Z][a-zA-Z ]{1,}" title="Please use letters only" required>
                          <label for="name">Name</label>
                     </div>
                                                                                  <!--mobile number-->
-                    <div class="input-field col s6">
+                    <div class="input-field col s6 black-text">
                          <input name="mobile_number" id="mob" type="text" class="validate" pattern="[0-9]{10}" title="please enter your 10 digit mobile number" required>
                          <label for="mob">Mobile No.</label>
                     </div>
@@ -275,11 +298,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
                               <option value="Ring Ring">Ring Ring</option>
                          </select>
                     </div>
-                                                                                <!--submit-->
+                     <div class="input-field col s6 black-text">
+                         <input name="zeal-id" id="zeal-id" type="text" placeholder="optional">
+                         <label for="name">Zealicon Id</label>
+                    </div>
+                    </div>
+                    <div class="row center">                                                            <!--submit-->
                     <div class="input-field col s6">
                          <center><button class="btn waves-effect waves-light light-blue darken-2" type="submit" name="action">Submit
                          <i class="material-icons right">send</i>
                          </button></center>
+                    </div>
                     </div>
                </div>
           </form>
@@ -316,6 +345,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
           $('.modal-trigger').leanModal();
           
        });
-     </script> 
+     </script>
+
+  
+
+   
+
+
+ 
+ 
 </body>
 </html>

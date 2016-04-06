@@ -75,7 +75,7 @@
                   <li><a href="zeal.php">Zealicon'16</a></li>
                   <li><a href="#">Events</a></li>
                   <li><a href="../index.html#cont">Contributions</a></li>
-                  <li><a href="../index.html#contact">Contact Us</a></li>
+                  <li><a class="modal-trigger" href="#modal1">Contact Us</a></li>
  
               </ul>
               <ul class="side-nav" id="nav-mobile">
@@ -84,13 +84,47 @@
                   <li><a href="pages/zeal.php">Zealicon'16</a></li>
                    <li><a href="#">Events</a></li>
                   <li><a href="#cont">Contributions</a></li>
-                  <li><a href="#contact">Contact Us</a></li>
+                  <li><a class="modal-trigger" href="#modal1">Contact Us</a></li>
                   
               </ul>
               <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
           </div>
       </div>
   </nav>
+  </div>
+
+  <div id="modal1" class="modal bottom-sheet overflow" style="background:#474747">
+  <div class="modal-content ">
+      <div class="row modal-content">
+          <div class="col s12">
+              <form class="col s12" action="mailscript/mail.php" method="post">
+                  <div class="row">
+                      <div class="input-field col s6">
+                          <i class="material-icons prefix white-text">person_pin</i>
+                          <input id="icon_prefix" name="name" type="text" class="validate white-text">
+                          <label for="icon_prefix" class="white-text">First Name</label>
+                      </div>
+                      <div class="input-field col s6">
+                          <i class="material-icons prefix white-text">message</i>
+                          <textarea id="icon_prefix2" name="message" class="materialize-textarea white-text"></textarea>
+                          <label for="icon_prefix2" class="white-text">Message</label>
+                      </div>
+                      <div class="input-field col s6">
+                          <i class="material-icons prefix white-text">email</i>
+                          <input id="icon_email" name="email" type="email" class="validate white-text">
+                          <label for="icon_email" class="white-text">Email-id</label>
+                      </div>
+                        <div class="col s6 center sub">
+                          <button class="btn waves-effect waves-light light blue darken-4 z-depth-5" type="submit">Submit
+                              <i class="material-icons right white-text">send</i>
+                          </button>
+                      </div>
+            </div>
+
+              </form>
+          </div>
+  </div>
+  </div>
   </div>
 
   <div class="parallax-container" id="proj">
@@ -216,8 +250,12 @@
          <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
          <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
           
-
-
+  <script type="text/javascript">
+  $(document).ready(function(){
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    $('.modal-trigger').leanModal();
+  });
+</script>
   <script type="text/javascript">
     
      $(document).ready(function(){
