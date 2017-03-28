@@ -17,8 +17,31 @@
  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
 <link rel="shortcut icon" type="image/x-icon" href="../icon.ico">
 <!--this link is for the social icons-->
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">    
 <style type="text/css">
+    .slider .indicators .indicator-item {
+  background-color: #666666;
+  border: 3px solid #ffffff;
+
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    
+}
+        
+.slider .indicators .indicator-item.active {
+  background-color: #ffffff;
+    
+}
+.slider {
+  width: 100%
+  margin: 0 auto;
+}
+.slider .indicators {
+  bottom: 60px;
+  z-index: 100;
+  /* text-align: left; */
+}
 
  
  body{
@@ -44,6 +67,14 @@ body {
 .bg{
         background-color: rgba(51, 51, 51, 0.64) !important;
   }
+    @media screen and ( max-width:1440px) and ( min-width:768px) {
+        .gif{display: none}
+        .sld{display: block}
+    } 
+    @media screen and (max-width:425px){
+        .gif{display: block}
+        .sld{display: none}
+    }    
 </style>
 
 
@@ -59,7 +90,8 @@ body {
         
             <ul class="right hide-on-med-and-down">
                 <li><a href="aboutus.html">About Us</a></li>
-                <li><a href="#">Zealicon'16</a></li>
+                <li><a href="../pages/team.html">Team</a></li>
+                <li><a href="#">Zealicon'17</a></li>
                 <li><a href="events.html">Events</a></li>
                 <li><a href="../index.html#cont">Contributions</a></li>
                 <li><a class="modal-trigger" href="#modal1">Contact Us</a></li>
@@ -67,7 +99,8 @@ body {
             </ul>
             <ul class="side-nav" id="nav-mobile">
                 <li><a href="aboutus.html">About Us</a></li>
-                <li><a href="#">Zealicon'16</a></li>
+                <li><a href="../pages/team.html">Team</a></li>
+                <li><a href="#">Zealicon'17</a></li>s
                 <li><a href="events.html">Events</a></li>
                 <li><a href="../index.html#cont">Contributions</a></li>
                 <li><a href="../index.html#contact">Contact Us</a></li>
@@ -118,50 +151,133 @@ body {
   </div>
 
 
-
       
 
 <!-- events-->
 
-<img class="responsive-img"style="width:100%;" src="../images/zeal.jpg">
+<img class="responsive-img"style="width:100%;" src="../images/zealicon.jpg">
 
 <div class="container">
-    <h2 class="header center black-text"><b>ZEALICON'16</b></h2>
+    <h2 class="header center black-text"><b>ZEALICON'17</b></h2>
     <div class="row">
-        <div class="col s6 m3 l3">
+        <div class="col s12 m12 gif">
+                        
+        
+        
+        <img style="width:100%" src="../images/zealicon-xs.gif" alt="default">
+         <!-- random image -->
+        </div>
+        <div class="col s12 m12 l12 sld">
+             <div class="slider">
+    <ul class="slides">
+      <li>
+        <picture>
+        <source srcset="../images/CA-s.jpg" media="(max-width:768px) and (min-width:426px)">    
+        <source srcset="../images/zealicon.gif" media="(max-width:425px)">
+        <img src="../images/CA.jpg" alt="default">
+        </picture> <!-- random image -->
+        <div class="caption center-align">
+          <h3></h3>
+          <h5 class="light grey-text text-lighten-3"></h5>
+        </div>
+      </li>
+      <li>
+        <picture>
+        <source srcset="../images/ring-s.jpg" media="(max-width:768px) and (min-width:426px)"> 
+        <source srcset="../images/ring-xs.jpg" media="(max-width:425px)">
+        <img src="../images/ring.jpg" alt="default">
+        </picture><!-- random image -->
+        <div class="caption left-align">
+          <h3></h3>
+          <h5 class="light grey-text text-lighten-3"></h5>
+        </div>
+      </li>
+      <li>
+        <picture>
+        <source srcset="../images/technovision-s.jpg" media="(max-width:768px) and (min-width:426px)">     
+        <source srcset="../images/technovision.jpg" media="(max-width:425px)">
+        <img src="../images/technovision.jpg" alt="default">
+        </picture><!-- random image --> <!-- random image -->
+        <div class="caption right-align">
+          <h3></h3>
+          <h5 class="light grey-text text-lighten-3"></h5>
+        </div>
+      </li>
+      <li>
+        <picture>
+        <source srcset="../images/compequzicon-s.jpg" media="(max-width:768px) and (min-width:426px)"> 
+        <source srcset="../images/compequzicon-xs.jpg" media="(max-width:425px)">
+        <img src="../images/compequzicon.jpg" alt="default">
+        </picture><!-- random image --> <!-- random image -->
+        <div class="caption center-align">
+          <h3></h3>
+          <h5 class="light grey-text text-lighten-3"></h5>
+        </div>
+      </li>
+        <li>
+        <picture>
+        <source srcset="../images/treasuro-s.jpg" media="(max-width:768px) and (min-width:426px)">     
+        <source srcset="../images/treasuro-xs" media="(max-width:425px)">
+        <img src="../images/treasuro.jpg" alt="default">
+        </picture><!-- random image --> <!-- random image -->
+        <div class="caption center-align">
+          <h3></h3>
+          <h5 class="light grey-text text-lighten-3"></h5>
+        </div>
+        </li>
+        
+    </ul>
+  </div>
+        </div>  
+        
+            
+        <div class="col s12 m6 l6"> 
             <div class="card hoverable">
                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="../images/code.jpg">
+                    <picture>
+        <source srcset="../images/CA-s.jpg" media="(max-width:768px) and (min-width:426px)">    
+        <source srcset="../images/CA-xs.jpg" media="(max-width:425px)">
+        <img src="../images/CA.jpg" alt="default">
+        </picture> <!-- random image -->
                 </div>
                 <div class="card-content center">
                     <span class="card-title activator grey-text text-darken-4 ">Code-Ageddon</span>
                 </div>
                 <div class="card-reveal center" id="rev">
                     <span class="card-title grey-text text-darken-4">Code-Ageddon<i class="mdi-navigation-close right"></i></span>
-                    <p>First know the language then solve the problems.</p>
+                    <p>First know the language then solve the problems.</p> 
 
                 </div>
             </div>
         </div>
+        
 
-        <div class="col s6 m3 l3">
+        <div class="col s12 m6 l6">
             <div class="card hoverable">
                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="../images/tech.jpg">
+                    <picture>
+        <source srcset="../images/technovision-s.jpg" media="(max-width:768px) and (min-width:426px)">     
+        <source srcset="../images/technovision-xs.jpg" media="(max-width:425px)">
+        <img src="../images/technovision.jpg" alt="default">
+        </picture><!-- random image --> <!-- random image -->
                 </div>
                 <div class="card-content center">
-                    <span class="card-title activator grey-text text-darken-4">Technovision'16</span>
+                    <span class="card-title activator grey-text text-darken-4">Technovision'17</span>
                 </div>
                 <div class="card-reveal center"  id="rev">
-                    <span class="card-title grey-text text-darken-4">Technovision'16<i class="mdi-navigation-close right"></i></span>
+                    <span class="card-title grey-text text-darken-4">Technovision'17<i class="mdi-navigation-close right"></i></span>
                     <p> Make the app and win hackathon.</p></div>
             </div>
         </div>
 
-        <div class="col s6 m3 l3">
+        <div class="col s12 m6 l6">
             <div class="card hoverable">
                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="../images/quiz.jpg">
+                    <picture>
+        <source srcset="../images/compequzicon-s.jpg" media="(max-width:768px) and (min-width:426px)"> 
+        <source srcset="../images/compequzicon-xs.jpg" media="(max-width:425px)">
+        <img src="../images/compequzicon.jpg" alt="default">
+        </picture>
                 </div>
                 <div class="card-content center">
                     <span class="card-title activator grey-text text-darken-4">Compequizicon</span>
@@ -172,10 +288,14 @@ body {
             </div>
         </div>
 
-        <div class="col s6 m3 l3">
+        <div class="col s12 m6 l6">
             <div class="card hoverable">
                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="../images/ring.jpg">
+                    <picture>
+        <source srcset="../images/ring-s.jpg" media="(max-width:768px) and (min-width:426px)"> 
+        <source srcset="../images/ring-xs.jpg" media="(max-width:425px)">
+        <img src="../images/ring.jpg" alt="default">
+        </picture><!-- random image -->
                 </div>
                 <div class="card-content center">
                     <span class="card-title activator grey-text text-darken-4 ">Ring Ring</span>
@@ -185,7 +305,25 @@ body {
                     <p>Have guts to answer rapid questions..then pick up the phone. </p>
                 </div>
             </div>
-        </div>
+            </div>
+        <div class="col s12 m6 l6">
+            <div class="card hoverable">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <picture>
+        <source srcset="../images/treasuro-s.jpg" media="(max-width:768px) and (min-width:426px)"> 
+        <source srcset="../images/treasuro-xs.jpg" media="(max-width:425px)">
+        <img src="../images/treasuro.jpg" alt="default">
+        </picture><!-- random image -->
+                </div>
+                <div class="card-content center">
+                    <span class="card-title activator grey-text text-darken-4 ">Treasuro</span>
+                </div>
+                <div class="card-reveal center"  id="rev">
+                    <span class="card-title grey-text text-darken-4">Treasuro<i class="mdi-navigation-close right"></i> </span>
+                    <p>If you will come here you will find hidden treasure. </p>
+                </div>
+            </div>
+            </div>
 
         
           
@@ -236,10 +374,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
      if (!$problem)
      {
       $data=$name.'     '.$mobile_number.'     '.$year.'    '.$branch.'    '.$zealid;
-      foreach ($events as $selectedOption)
-        file_put_contents($selectedOption.' Registration List.txt',$data . PHP_EOL, FILE_APPEND);
+      foreach ($events as $selectedOption){
+        file_put_contents($selectedOption.' Registration List.txt',$data . PHP_EOL, FILE_APPEND);}
 
-      echo "<script>alert('THANX FOR REGISTERING!!');</script>";
+      //echo "<script>alert('THANX FOR REGISTERING!!');</script>";
      }
 }
 
@@ -292,10 +430,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
                                                                                  <!--events-->
                          <select multiple name="events[]">
                               <option value="" disabled selected>Choose Your Events</option>
-                              <option value="Casseopeian Wars">Casseopeian Wars</option>
+                              <option value="Technovision">Technovision</option>
                               <option value="Compequizicon">Compequizicon</option>
                               <option value="Code-Ageddon">Code-Ageddon</option>
                               <option value="Ring Ring">Ring Ring</option>
+                              <option value="Treasuro">Treasuro</option>
                          </select>
                     </div>
                      <div class="input-field col s6 black-text">
@@ -304,15 +443,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
                     </div>
                     </div>
                     <div class="row center">                                                            <!--submit-->
-                    <div class="input-field col s6">
+                    <div class="input-field col s3">
                          <center><button class="btn waves-effect waves-light light-blue darken-2" type="submit" name="action">Submit
-                         <i class="material-icons right">send</i>
+                         <i class="material-icons right"></i>
                          </button></center>
                     </div>
                     </div>
-               </div>
+               
           </form>
-     </div>
+    </div>
+     
 
 
 <footer id="contact" class="bg scrollspy" style="font-size:20px">
@@ -328,9 +468,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
           Made by <a class="white-text" href="index.html" style="margin-left:0.5em">Microsoft Mobile Innovation Lab.</a> 
           </div>
   </div>
-  </footer>
-
-
+  
+    </div>
+    </footer>
+    
 
 
 
@@ -343,14 +484,18 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
            $(document).ready(function() {
          $('select').material_select();
           $('.modal-trigger').leanModal();
-          
-       });
+               $('.slider').slider();
+  });
+         
+
+
+         
      </script>
 
   
 
    
-
+    
 
  
  
